@@ -1,0 +1,456 @@
+{
+  "protocols": {
+    "biomass_lodo": {
+      "0": {
+        "n_records": 5507,
+        "n_groups": 170,
+        "by_split": {
+          "test": 490,
+          "train": 4030,
+          "val": 987
+        },
+        "groups_by_split": {
+          "test": 22,
+          "train": 118,
+          "val": 30
+        },
+        "overlaps": {}
+      },
+      "1": {
+        "n_records": 5507,
+        "n_groups": 170,
+        "by_split": {
+          "test": 2002,
+          "train": 2855,
+          "val": 650
+        },
+        "groups_by_split": {
+          "test": 58,
+          "train": 90,
+          "val": 22
+        },
+        "overlaps": {}
+      },
+      "2": {
+        "n_records": 5507,
+        "n_groups": 170,
+        "by_split": {
+          "test": 1719,
+          "train": 3000,
+          "val": 788
+        },
+        "groups_by_split": {
+          "test": 50,
+          "train": 96,
+          "val": 24
+        },
+        "overlaps": {}
+      },
+      "3": {
+        "n_records": 5507,
+        "n_groups": 170,
+        "by_split": {
+          "test": 635,
+          "train": 3909,
+          "val": 963
+        },
+        "groups_by_split": {
+          "test": 20,
+          "train": 120,
+          "val": 30
+        },
+        "overlaps": {}
+      },
+      "4": {
+        "n_records": 5507,
+        "n_groups": 170,
+        "by_split": {
+          "test": 661,
+          "train": 3896,
+          "val": 950
+        },
+        "groups_by_split": {
+          "test": 20,
+          "train": 120,
+          "val": 30
+        },
+        "overlaps": {}
+      }
+    },
+    "cross_sd2tg": {
+      "0": {
+        "n_records": 2100,
+        "n_groups": 1920,
+        "by_split": {
+          "test": 951,
+          "train": 919,
+          "val": 230
+        },
+        "groups_by_split": {
+          "test": 831,
+          "train": 871,
+          "val": 218
+        },
+        "overlaps": {}
+      }
+    },
+    "cross_tg2sd": {
+      "0": {
+        "n_records": 1930,
+        "n_groups": 1765,
+        "by_split": {
+          "test": 929,
+          "train": 801,
+          "val": 200
+        },
+        "groups_by_split": {
+          "test": 884,
+          "train": 706,
+          "val": 175
+        },
+        "overlaps": {}
+      }
+    },
+    "disease_cv": {
+      "0": {
+        "n_records": 2150,
+        "n_groups": 1970,
+        "by_split": {
+          "test": 430,
+          "train": 1376,
+          "val": 344
+        },
+        "groups_by_split": {
+          "test": 393,
+          "train": 1262,
+          "val": 315
+        },
+        "overlaps": {}
+      },
+      "1": {
+        "n_records": 2150,
+        "n_groups": 1970,
+        "by_split": {
+          "test": 430,
+          "train": 1375,
+          "val": 345
+        },
+        "groups_by_split": {
+          "test": 394,
+          "train": 1259,
+          "val": 317
+        },
+        "overlaps": {}
+      },
+      "2": {
+        "n_records": 2150,
+        "n_groups": 1970,
+        "by_split": {
+          "test": 430,
+          "train": 1376,
+          "val": 344
+        },
+        "groups_by_split": {
+          "test": 393,
+          "train": 1262,
+          "val": 315
+        },
+        "overlaps": {}
+      },
+      "3": {
+        "n_records": 2150,
+        "n_groups": 1970,
+        "by_split": {
+          "test": 430,
+          "train": 1376,
+          "val": 344
+        },
+        "groups_by_split": {
+          "test": 395,
+          "train": 1261,
+          "val": 314
+        },
+        "overlaps": {}
+      },
+      "4": {
+        "n_records": 2150,
+        "n_groups": 1970,
+        "by_split": {
+          "test": 430,
+          "train": 1376,
+          "val": 344
+        },
+        "groups_by_split": {
+          "test": 395,
+          "train": 1262,
+          "val": 313
+        },
+        "overlaps": {}
+      }
+    },
+    "disease_cv_sdibd": {
+      "0": {
+        "n_records": 1149,
+        "n_groups": 1089,
+        "by_split": {
+          "test": 230,
+          "train": 735,
+          "val": 184
+        },
+        "groups_by_split": {
+          "test": 218,
+          "train": 696,
+          "val": 175
+        },
+        "overlaps": {}
+      },
+      "1": {
+        "n_records": 1149,
+        "n_groups": 1089,
+        "by_split": {
+          "test": 230,
+          "train": 735,
+          "val": 184
+        },
+        "groups_by_split": {
+          "test": 218,
+          "train": 697,
+          "val": 174
+        },
+        "overlaps": {}
+      },
+      "2": {
+        "n_records": 1149,
+        "n_groups": 1089,
+        "by_split": {
+          "test": 230,
+          "train": 735,
+          "val": 184
+        },
+        "groups_by_split": {
+          "test": 218,
+          "train": 698,
+          "val": 173
+        },
+        "overlaps": {}
+      },
+      "3": {
+        "n_records": 1149,
+        "n_groups": 1089,
+        "by_split": {
+          "test": 230,
+          "train": 735,
+          "val": 184
+        },
+        "groups_by_split": {
+          "test": 218,
+          "train": 697,
+          "val": 174
+        },
+        "overlaps": {}
+      },
+      "4": {
+        "n_records": 1149,
+        "n_groups": 1089,
+        "by_split": {
+          "test": 229,
+          "train": 735,
+          "val": 185
+        },
+        "groups_by_split": {
+          "test": 217,
+          "train": 697,
+          "val": 175
+        },
+        "overlaps": {}
+      }
+    },
+    "disease_cv_tiger": {
+      "0": {
+        "n_records": 1001,
+        "n_groups": 881,
+        "by_split": {
+          "test": 200,
+          "train": 640,
+          "val": 161
+        },
+        "groups_by_split": {
+          "test": 175,
+          "train": 563,
+          "val": 143
+        },
+        "overlaps": {}
+      },
+      "1": {
+        "n_records": 1001,
+        "n_groups": 881,
+        "by_split": {
+          "test": 200,
+          "train": 641,
+          "val": 160
+        },
+        "groups_by_split": {
+          "test": 176,
+          "train": 564,
+          "val": 141
+        },
+        "overlaps": {}
+      },
+      "2": {
+        "n_records": 1001,
+        "n_groups": 881,
+        "by_split": {
+          "test": 201,
+          "train": 640,
+          "val": 160
+        },
+        "groups_by_split": {
+          "test": 177,
+          "train": 563,
+          "val": 141
+        },
+        "overlaps": {}
+      },
+      "3": {
+        "n_records": 1001,
+        "n_groups": 881,
+        "by_split": {
+          "test": 200,
+          "train": 640,
+          "val": 161
+        },
+        "groups_by_split": {
+          "test": 177,
+          "train": 562,
+          "val": 142
+        },
+        "overlaps": {}
+      },
+      "4": {
+        "n_records": 1001,
+        "n_groups": 881,
+        "by_split": {
+          "test": 200,
+          "train": 641,
+          "val": 160
+        },
+        "groups_by_split": {
+          "test": 176,
+          "train": 565,
+          "val": 140
+        },
+        "overlaps": {}
+      }
+    },
+    "disease_cv_withaug": {
+      "0": {
+        "n_records": 4590,
+        "n_groups": 2020,
+        "by_split": {
+          "test": 430,
+          "train": 3816,
+          "val": 344
+        },
+        "groups_by_split": {
+          "test": 393,
+          "train": 1312,
+          "val": 315
+        },
+        "overlaps": {}
+      },
+      "1": {
+        "n_records": 4600,
+        "n_groups": 2020,
+        "by_split": {
+          "test": 430,
+          "train": 3825,
+          "val": 345
+        },
+        "groups_by_split": {
+          "test": 394,
+          "train": 1309,
+          "val": 317
+        },
+        "overlaps": {}
+      },
+      "2": {
+        "n_records": 4574,
+        "n_groups": 2020,
+        "by_split": {
+          "test": 430,
+          "train": 3800,
+          "val": 344
+        },
+        "groups_by_split": {
+          "test": 393,
+          "train": 1312,
+          "val": 315
+        },
+        "overlaps": {}
+      },
+      "3": {
+        "n_records": 4571,
+        "n_groups": 2020,
+        "by_split": {
+          "test": 430,
+          "train": 3797,
+          "val": 344
+        },
+        "groups_by_split": {
+          "test": 395,
+          "train": 1311,
+          "val": 314
+        },
+        "overlaps": {}
+      },
+      "4": {
+        "n_records": 4604,
+        "n_groups": 2020,
+        "by_split": {
+          "test": 430,
+          "train": 3830,
+          "val": 344
+        },
+        "groups_by_split": {
+          "test": 395,
+          "train": 1312,
+          "val": 313
+        },
+        "overlaps": {}
+      }
+    }
+  },
+  "violations": [],
+  "manifest_cross_check": {
+    "checked_protocols": [
+      "biomass_lodo/f0",
+      "biomass_lodo/f1",
+      "biomass_lodo/f2",
+      "biomass_lodo/f3",
+      "biomass_lodo/f4",
+      "cross_sd2tg/f0",
+      "cross_tg2sd/f0",
+      "disease_cv/f0",
+      "disease_cv/f1",
+      "disease_cv/f2",
+      "disease_cv/f3",
+      "disease_cv/f4",
+      "disease_cv_sdibd/f0",
+      "disease_cv_sdibd/f1",
+      "disease_cv_sdibd/f2",
+      "disease_cv_sdibd/f3",
+      "disease_cv_sdibd/f4",
+      "disease_cv_tiger/f0",
+      "disease_cv_tiger/f1",
+      "disease_cv_tiger/f2",
+      "disease_cv_tiger/f3",
+      "disease_cv_tiger/f4",
+      "disease_cv_withaug/f0",
+      "disease_cv_withaug/f1",
+      "disease_cv_withaug/f2",
+      "disease_cv_withaug/f3",
+      "disease_cv_withaug/f4"
+    ],
+    "violations": []
+  }
+}

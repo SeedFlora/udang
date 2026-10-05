@@ -1,0 +1,9 @@
+{
+  "kept_protocols_membership_identical": true,
+  "sdibd_raw_images": 1149,
+  "sdibd_animals": 416,
+  "sdibd_groups_after_fix": 412,
+  "old_split_hash": "b3943dc4ec3f3b8efd58cb2d25dcc66a754a01d8a23309f9fe3a49b6f87f8913",
+  "new_split_hash": "8cea4f217d4881079bb09715c5702024befe9e97798469711059cd96269b5fac",
+  "grouping_hash": "a7d736a483881ed05bf702c1a023d3cc200ab03387d0c7c7fd08a72bd35a9868"
+}

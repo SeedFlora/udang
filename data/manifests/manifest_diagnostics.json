@@ -1,0 +1,452 @@
+{
+  "ShrimpDiseaseImageBD": {
+    "unclassified_paths": [],
+    "n_raw": 1149,
+    "n_annotated": 746,
+    "n_labels": 746,
+    "unparsed_names": [],
+    "class_token_mismatch": []
+  },
+  "TigerShrimpBD": {
+    "unclassified_paths": [],
+    "by_class_role": {
+      "black_gill/augmented": 854,
+      "black_gill/original": 39,
+      "healthy/augmented": 846,
+      "healthy/original": 423,
+      "wssv/augmented": 978,
+      "wssv/original": 489,
+      "yellow_head/augmented": 896,
+      "yellow_head/original": 50
+    }
+  },
+  "BiomassVannamei": {
+    "sheets": [
+      {
+        "file": "DB1_INDUSTRIAL_FARM_1.xlsx",
+        "n_rows": 22,
+        "columns_mapped": {
+          "SAMPLE": "sample",
+          "LENGTH (cm)": "length_cm",
+          "WEIGHT (g)": "weight_g",
+          "COMPLETE SHRIMP IMAGES": "complete_body"
+        },
+        "columns_unmapped": [],
+        "n_duplicate_samples": 0,
+        "has_cephalothorax": false,
+        "has_complete_body": true,
+        "db": "DB1"
+      },
+      {
+        "file": "DB2_INDUSTRIAL_FARM_2_C1.xlsx",
+        "n_rows": 58,
+        "columns_mapped": {
+          "SAMPLE": "sample",
+          "CEPHALOTHORAX (cm)": "cephalothorax_cm",
+          "LENGTH (cm)": "length_cm",
+          "WEIGHT (g)": "weight_g",
+          "COMPLETE SHRIMP IMAGES": "complete_body"
+        },
+        "columns_unmapped": [],
+        "n_duplicate_samples": 0,
+        "has_cephalothorax": true,
+        "has_complete_body": true,
+        "db": "DB2"
+      },
+      {
+        "file": "DB3_INDUSTRIAL_FARM_2_C2.xlsx",
+        "n_rows": 50,
+        "columns_mapped": {
+          "SAMPLE": "sample",
+          "CEPHALOTHORAX (cm)": "cephalothorax_cm",
+          "LENGTH (cm)": "length_cm",
+          "WEIGHT (g)": "weight_g",
+          "COMPLETE SHRIMP IMAGES": "complete_body"
+        },
+        "columns_unmapped": [],
+        "n_duplicate_samples": 0,
+        "has_cephalothorax": true,
+        "has_complete_body": true,
+        "db": "DB3"
+      },
+      {
+        "file": "DB4_ACADEMIC_POND_S1.xlsx",
+        "n_rows": 20,
+        "columns_mapped": {
+          "SAMPLE": "sample",
+          "CEPHALOTHORAX (cm)": "cephalothorax_cm",
+          "LENGTH (cm)": "length_cm",
+          "WEIGHT (g)": "weight_g",
+          "COMPLETE SHRIMP IMAGES": "complete_body"
+        },
+        "columns_unmapped": [],
+        "n_duplicate_samples": 0,
+        "has_cephalothorax": true,
+        "has_complete_body": true,
+        "db": "DB4"
+      },
+      {
+        "file": "DB5_ACADEMIC_POND_S2.xlsx",
+        "n_rows": 20,
+        "columns_mapped": {
+          "SAMPLE": "sample",
+          "CEPHALOTHORAX (cm)": "cephalothorax_cm",
+          "LENGTH (cm)": "length_cm",
+          "WEIGHT (g)": "weight_g",
+          "COMPLETE SHRIMP IMAGES": "complete_body"
+        },
+        "columns_unmapped": [],
+        "n_duplicate_samples": 0,
+        "has_cephalothorax": true,
+        "has_complete_body": true,
+        "db": "DB5"
+      }
+    ],
+    "unparsed_names": [],
+    "by_db": {
+      "DB1": {
+        "n_images": 490,
+        "n_individuals_in_images": 22,
+        "n_individuals_in_sheet": 22
+      },
+      "DB2": {
+        "n_images": 2002,
+        "n_individuals_in_images": 58,
+        "n_individuals_in_sheet": 58
+      },
+      "DB3": {
+        "n_images": 1719,
+        "n_individuals_in_images": 50,
+        "n_individuals_in_sheet": 50
+      },
+      "DB4": {
+        "n_images": 635,
+        "n_individuals_in_images": 20,
+        "n_individuals_in_sheet": 20
+      },
+      "DB5": {
+        "n_images": 661,
+        "n_individuals_in_images": 20,
+        "n_individuals_in_sheet": 20
+      }
+    },
+    "images_without_measurement": [],
+    "measurements_without_images": [],
+    "implausible": [],
+    "db_dirs_found": {
+      "DB1": "DATASET/DB1",
+      "DB2": "DATASET/DB2",
+      "DB3": "DATASET/DB3",
+      "DB4": "DATASET/DB4",
+      "DB5": "DATASET/DB5"
+    }
+  },
+  "dedup": {
+    "n_records": 11977,
+    "n_groups": 1513,
+    "n_exact_dup_links": 747,
+    "n_family_links": 3245,
+    "n_near_dup_links": 38520,
+    "n_forced_links": 6816,
+    "largest_group": 80,
+    "n_singleton_groups": 26,
+    "group_size_histogram": {
+      "1": 26,
+      "2": 27,
+      "3": 834,
+      "4": 44,
+      "5": 1,
+      "6": 276,
+      "9": 13,
+      "12": 7,
+      "13": 28,
+      "14": 2,
+      "15": 66,
+      "16": 8,
+      "20": 20,
+      "24": 1,
+      "25": 1,
+      "26": 1,
+      "28": 2,
+      "29": 8,
+      "30": 100,
+      "31": 1,
+      "32": 1,
+      "35": 3,
+      "39": 2,
+      "40": 32,
+      "43": 1,
+      "45": 1,
+      "50": 1,
+      "60": 2,
+      "65": 1,
+      "75": 1,
+      "80": 2
+    },
+    "near_pairs_sample": [
+      [
+        201,
+        212,
+        2
+      ],
+      [
+        201,
+        223,
+        4
+      ],
+      [
+        201,
+        234,
+        4
+      ],
+      [
+        201,
+        245,
+        4
+      ],
+      [
+        201,
+        256,
+        4
+      ],
+      [
+        201,
+        267,
+        6
+      ],
+      [
+        201,
+        274,
+        6
+      ],
+      [
+        201,
+        275,
+        6
+      ],
+      [
+        203,
+        214,
+        6
+      ],
+      [
+        204,
+        205,
+        2
+      ],
+      [
+        204,
+        206,
+        4
+      ],
+      [
+        204,
+        207,
+        4
+      ],
+      [
+        204,
+        208,
+        2
+      ],
+      [
+        204,
+        209,
+        4
+      ],
+      [
+        204,
+        210,
+        6
+      ],
+      [
+        204,
+        256,
+        6
+      ],
+      [
+        204,
+        267,
+        6
+      ],
+      [
+        204,
+        274,
+        4
+      ],
+      [
+        204,
+        275,
+        4
+      ],
+      [
+        205,
+        206,
+        2
+      ],
+      [
+        205,
+        207,
+        2
+      ],
+      [
+        205,
+        208,
+        2
+      ],
+      [
+        205,
+        209,
+        2
+      ],
+      [
+        205,
+        210,
+        6
+      ],
+      [
+        205,
+        256,
+        6
+      ],
+      [
+        205,
+        267,
+        4
+      ],
+      [
+        205,
+        274,
+        4
+      ],
+      [
+        205,
+        275,
+        4
+      ],
+      [
+        206,
+        207,
+        2
+      ],
+      [
+        206,
+        208,
+        4
+      ],
+      [
+        206,
+        209,
+        2
+      ],
+      [
+        206,
+        223,
+        6
+      ],
+      [
+        206,
+        234,
+        6
+      ],
+      [
+        206,
+        245,
+        6
+      ],
+      [
+        206,
+        256,
+        4
+      ],
+      [
+        206,
+        267,
+        2
+      ],
+      [
+        206,
+        274,
+        2
+      ],
+      [
+        206,
+        275,
+        2
+      ],
+      [
+        207,
+        208,
+        2
+      ],
+      [
+        207,
+        209,
+        0
+      ],
+      [
+        207,
+        210,
+        6
+      ],
+      [
+        207,
+        256,
+        6
+      ],
+      [
+        207,
+        267,
+        4
+      ],
+      [
+        207,
+        274,
+        4
+      ],
+      [
+        207,
+        275,
+        4
+      ],
+      [
+        208,
+        209,
+        2
+      ],
+      [
+        208,
+        210,
+        6
+      ],
+      [
+        208,
+        256,
+        6
+      ],
+      [
+        208,
+        267,
+        6
+      ],
+      [
+        208,
+        274,
+        4
+      ]
+    ],
+    "stage_components": {
+      "seeded": 11977,
+      "after_exact_duplicates": 11230,
+      "after_augmentation_families": 8732,
+      "after_perceptual_near_duplicates": 3597,
+      "after_forced_individuals": 1513
+    },
+    "stage_links": {
+      "exact": 747,
+      "family": 3245,
+      "near": 38520,
+      "forced": 6816
+    }
+  }
+}

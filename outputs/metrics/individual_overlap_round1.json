@@ -1,0 +1,239 @@
+{
+  "splits_dir": "data/splits",
+  "per_fold": [
+    {
+      "protocol": "cross_sd2tg",
+      "fold": 0,
+      "n_test": 951,
+      "n_test_identifiable": 0,
+      "n_test_unmatched": 0,
+      "n_test_shared_animal": 0,
+      "frac_shared": null
+    },
+    {
+      "protocol": "cross_tg2sd",
+      "fold": 0,
+      "n_test": 929,
+      "n_test_identifiable": 929,
+      "n_test_unmatched": 0,
+      "n_test_shared_animal": 0,
+      "frac_shared": 0.0
+    },
+    {
+      "protocol": "disease_cv",
+      "fold": 0,
+      "n_test": 430,
+      "n_test_identifiable": 231,
+      "n_test_unmatched": 0,
+      "n_test_shared_animal": 202,
+      "frac_shared": 0.8744588744588745
+    },
+    {
+      "protocol": "disease_cv",
+      "fold": 1,
+      "n_test": 430,
+      "n_test_identifiable": 230,
+      "n_test_unmatched": 0,
+      "n_test_shared_animal": 195,
+      "frac_shared": 0.8478260869565217
+    },
+    {
+      "protocol": "disease_cv",
+      "fold": 2,
+      "n_test": 430,
+      "n_test_identifiable": 229,
+      "n_test_unmatched": 0,
+      "n_test_shared_animal": 204,
+      "frac_shared": 0.8908296943231441
+    },
+    {
+      "protocol": "disease_cv",
+      "fold": 3,
+      "n_test": 430,
+      "n_test_identifiable": 229,
+      "n_test_unmatched": 0,
+      "n_test_shared_animal": 204,
+      "frac_shared": 0.8908296943231441
+    },
+    {
+      "protocol": "disease_cv",
+      "fold": 4,
+      "n_test": 430,
+      "n_test_identifiable": 230,
+      "n_test_unmatched": 0,
+      "n_test_shared_animal": 212,
+      "frac_shared": 0.9217391304347826
+    },
+    {
+      "protocol": "disease_cv_sdibd",
+      "fold": 0,
+      "n_test": 230,
+      "n_test_identifiable": 230,
+      "n_test_unmatched": 0,
+      "n_test_shared_animal": 207,
+      "frac_shared": 0.9
+    },
+    {
+      "protocol": "disease_cv_sdibd",
+      "fold": 1,
+      "n_test": 230,
+      "n_test_identifiable": 230,
+      "n_test_unmatched": 0,
+      "n_test_shared_animal": 213,
+      "frac_shared": 0.9260869565217391
+    },
+    {
+      "protocol": "disease_cv_sdibd",
+      "fold": 2,
+      "n_test": 230,
+      "n_test_identifiable": 230,
+      "n_test_unmatched": 0,
+      "n_test_shared_animal": 213,
+      "frac_shared": 0.9260869565217391
+    },
+    {
+      "protocol": "disease_cv_sdibd",
+      "fold": 3,
+      "n_test": 230,
+      "n_test_identifiable": 230,
+      "n_test_unmatched": 0,
+      "n_test_shared_animal": 212,
+      "frac_shared": 0.9217391304347826
+    },
+    {
+      "protocol": "disease_cv_sdibd",
+      "fold": 4,
+      "n_test": 229,
+      "n_test_identifiable": 229,
+      "n_test_unmatched": 0,
+      "n_test_shared_animal": 194,
+      "frac_shared": 0.8471615720524017
+    },
+    {
+      "protocol": "disease_cv_tiger",
+      "fold": 0,
+      "n_test": 200,
+      "n_test_identifiable": 0,
+      "n_test_unmatched": 0,
+      "n_test_shared_animal": 0,
+      "frac_shared": null
+    },
+    {
+      "protocol": "disease_cv_tiger",
+      "fold": 1,
+      "n_test": 200,
+      "n_test_identifiable": 0,
+      "n_test_unmatched": 0,
+      "n_test_shared_animal": 0,
+      "frac_shared": null
+    },
+    {
+      "protocol": "disease_cv_tiger",
+      "fold": 2,
+      "n_test": 201,
+      "n_test_identifiable": 0,
+      "n_test_unmatched": 0,
+      "n_test_shared_animal": 0,
+      "frac_shared": null
+    },
+    {
+      "protocol": "disease_cv_tiger",
+      "fold": 3,
+      "n_test": 200,
+      "n_test_identifiable": 0,
+      "n_test_unmatched": 0,
+      "n_test_shared_animal": 0,
+      "frac_shared": null
+    },
+    {
+      "protocol": "disease_cv_tiger",
+      "fold": 4,
+      "n_test": 200,
+      "n_test_identifiable": 0,
+      "n_test_unmatched": 0,
+      "n_test_shared_animal": 0,
+      "frac_shared": null
+    },
+    {
+      "protocol": "disease_cv_withaug",
+      "fold": 0,
+      "n_test": 430,
+      "n_test_identifiable": 231,
+      "n_test_unmatched": 0,
+      "n_test_shared_animal": 202,
+      "frac_shared": 0.8744588744588745
+    },
+    {
+      "protocol": "disease_cv_withaug",
+      "fold": 1,
+      "n_test": 430,
+      "n_test_identifiable": 230,
+      "n_test_unmatched": 0,
+      "n_test_shared_animal": 195,
+      "frac_shared": 0.8478260869565217
+    },
+    {
+      "protocol": "disease_cv_withaug",
+      "fold": 2,
+      "n_test": 430,
+      "n_test_identifiable": 229,
+      "n_test_unmatched": 0,
+      "n_test_shared_animal": 204,
+      "frac_shared": 0.8908296943231441
+    },
+    {
+      "protocol": "disease_cv_withaug",
+      "fold": 3,
+      "n_test": 430,
+      "n_test_identifiable": 229,
+      "n_test_unmatched": 0,
+      "n_test_shared_animal": 204,
+      "frac_shared": 0.8908296943231441
+    },
+    {
+      "protocol": "disease_cv_withaug",
+      "fold": 4,
+      "n_test": 430,
+      "n_test_identifiable": 230,
+      "n_test_unmatched": 0,
+      "n_test_shared_animal": 212,
+      "frac_shared": 0.9217391304347826
+    }
+  ],
+  "per_protocol_frac_shared": {
+    "cross_tg2sd": {
+      "min": 0.0,
+      "max": 0.0,
+      "mean": 0.0
+    },
+    "disease_cv": {
+      "min": 0.8478,
+      "max": 0.9217,
+      "mean": 0.8851
+    },
+    "disease_cv_sdibd": {
+      "min": 0.8472,
+      "max": 0.9261,
+      "mean": 0.9042
+    },
+    "disease_cv_withaug": {
+      "min": 0.8478,
+      "max": 0.9217,
+      "mean": 0.8851
+    },
+    "cross_sd2tg": {
+      "min": null,
+      "max": null,
+      "mean": null,
+      "note": "no identifiable test images"
+    },
+    "disease_cv_tiger": {
+      "min": null,
+      "max": null,
+      "mean": null,
+      "note": "no identifiable test images"
+    }
+  },
+  "splits_dir_note": "measured against the SUBMITTED split tables (file-level SDIBD grouping, split hash b3943dc4ec3f3b8e\u2026), archived as data/splits_round1_submitted/; data/splits was rebuilt on the animal-level grouping afterwards (Plan 1 Task 14, commit c00d465).",
+  "splits_dir_at_measurement": "data/splits_round1_submitted"
+}

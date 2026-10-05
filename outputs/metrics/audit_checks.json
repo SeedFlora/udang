@@ -1,0 +1,836 @@
+{
+  "summary": {
+    "n_checks": 22,
+    "n_pass": 16,
+    "n_warn": 5,
+    "n_fail": 1,
+    "leakage_critical_failures": [],
+    "gate": "CLEAR"
+  },
+  "checks": [
+    {
+      "check": "missing_files",
+      "status": "pass",
+      "severity": "leakage_critical",
+      "count": 0,
+      "message": "0 manifest rows point at files that do not exist",
+      "examples": [],
+      "extra": {}
+    },
+    {
+      "check": "unreadable_or_corrupt",
+      "status": "pass",
+      "severity": "informational",
+      "count": 0,
+      "message": "0 images could not be decoded and were excluded",
+      "examples": [],
+      "extra": {}
+    },
+    {
+      "check": "exact_duplicate_sha256",
+      "status": "warn",
+      "severity": "leakage_critical",
+      "count": 747,
+      "message": "747 SHA-256 values occur more than once (747 redundant copies). These are fused into one group so they cannot straddle a split.",
+      "examples": [
+        {
+          "sha256": "0047e595287c2d87",
+          "n": 2,
+          "paths": [
+            "data/raw/shrimp_disease_image_bd/extracted/Annotated Diseased Shrimp Images/1. BG/images/BG-28-img-2.jpg",
+            "data/raw/shrimp_disease_image_bd/extracted/Raw Images/2. BG/BG-28-img-2.jpg"
+          ],
+          "datasets": [
+            "ShrimpDiseaseImageBD"
+          ]
+        },
+        {
+          "sha256": "00602351ac33ad7c",
+          "n": 2,
+          "paths": [
+            "data/raw/shrimp_disease_image_bd/extracted/Annotated Diseased Shrimp Images/4. WSSV_BG/images/WSSV_BG-64-img-2.jpg",
+            "data/raw/shrimp_disease_image_bd/extracted/Raw Images/4. WSSV_BG/WSSV_BG-64-img-2.jpg"
+          ],
+          "datasets": [
+            "ShrimpDiseaseImageBD"
+          ]
+        },
+        {
+          "sha256": "011cc6d717abea76",
+          "n": 2,
+          "paths": [
+            "data/raw/shrimp_disease_image_bd/extracted/Annotated Diseased Shrimp Images/2. WSSV/images/WSSV-100-img-2.jpg",
+            "data/raw/shrimp_disease_image_bd/extracted/Raw Images/3. WSSV/WSSV-100-img-2.jpg"
+          ],
+          "datasets": [
+            "ShrimpDiseaseImageBD"
+          ]
+        },
+        {
+          "sha256": "018bb309a3bf982f",
+          "n": 2,
+          "paths": [
+            "data/raw/shrimp_disease_image_bd/extracted/Annotated Diseased Shrimp Images/1. BG/images/BG-23-img-1.jpg",
+            "data/raw/shrimp_disease_image_bd/extracted/Raw Images/2. BG/BG-23-img-1.jpg"
+          ],
+          "datasets": [
+            "ShrimpDiseaseImageBD"
+          ]
+        },
+        {
+          "sha256": "0245cb5829159b0d",
+          "n": 2,
+          "paths": [
+            "data/raw/shrimp_disease_image_bd/extracted/Annotated Diseased Shrimp Images/2. WSSV/images/WSSV-45-img-2.jpg",
+            "data/raw/shrimp_disease_image_bd/extracted/Raw Images/3. WSSV/WSSV-45-img-2.jpg"
+          ],
+          "datasets": [
+            "ShrimpDiseaseImageBD"
+          ]
+        },
+        {
+          "sha256": "024c705bc13b0c72",
+          "n": 2,
+          "paths": [
+            "data/raw/shrimp_disease_image_bd/extracted/Annotated Diseased Shrimp Images/4. WSSV_BG/images/WSSV_BG-56-img-1.jpg",
+            "data/raw/shrimp_disease_image_bd/extracted/Raw Images/4. WSSV_BG/WSSV_BG-56-img-1.jpg"
+          ],
+          "datasets": [
+            "ShrimpDiseaseImageBD"
+          ]
+        },
+        {
+          "sha256": "02606560b4582d66",
+          "n": 2,
+          "paths": [
+            "data/raw/shrimp_disease_image_bd/extracted/Annotated Diseased Shrimp Images/4. WSSV_BG/images/WSSV_BG-75-img-1.jpg",
+            "data/raw/shrimp_disease_image_bd/extracted/Raw Images/4. WSSV_BG/WSSV_BG-75-img-1.jpg"
+          ],
+          "datasets": [
+            "ShrimpDiseaseImageBD"
+          ]
+        },
+        {
+          "sha256": "02698fb8be95af35",
+          "n": 2,
+          "paths": [
+            "data/raw/shrimp_disease_image_bd/extracted/Annotated Diseased Shrimp Images/2. WSSV/images/WSSV-8-img-3.jpg",
+            "data/raw/shrimp_disease_image_bd/extracted/Raw Images/3. WSSV/WSSV-8-img-3.jpg"
+          ],
+          "datasets": [
+            "ShrimpDiseaseImageBD"
+          ]
+        },
+        {
+          "sha256": "030fcaa9c84981ba",
+          "n": 2,
+          "paths": [
+            "data/raw/shrimp_disease_image_bd/extracted/Annotated Diseased Shrimp Images/2. WSSV/images/WSSV-6-img-2.jpg",
+            "data/raw/shrimp_disease_image_bd/extracted/Raw Images/3. WSSV/WSSV-6-img-2.jpg"
+          ],
+          "datasets": [
+            "ShrimpDiseaseImageBD"
+          ]
+        },
+        {
+          "sha256": "035d8bc4fd062e40",
+          "n": 2,
+          "paths": [
+            "data/raw/shrimp_disease_image_bd/extracted/Annotated Diseased Shrimp Images/2. WSSV/images/WSSV-105-img-3.jpg",
+            "data/raw/shrimp_disease_image_bd/extracted/Raw Images/3. WSSV/WSSV-105-img-3.jpg"
+          ],
+          "datasets": [
+            "ShrimpDiseaseImageBD"
+          ]
+        }
+      ],
+      "extra": {
+        "n_redundant_copies": 747
+      }
+    },
+    {
+      "check": "near_duplicates_phash",
+      "status": "pass",
+      "severity": "informational",
+      "count": 38520,
+      "message": "38520 within-block perceptual near-duplicate links fused into groups",
+      "examples": [
+        [
+          201,
+          212,
+          2
+        ],
+        [
+          201,
+          223,
+          4
+        ],
+        [
+          201,
+          234,
+          4
+        ],
+        [
+          201,
+          245,
+          4
+        ],
+        [
+          201,
+          256,
+          4
+        ],
+        [
+          201,
+          267,
+          6
+        ],
+        [
+          201,
+          274,
+          6
+        ],
+        [
+          201,
+          275,
+          6
+        ],
+        [
+          203,
+          214,
+          6
+        ],
+        [
+          204,
+          205,
+          2
+        ]
+      ],
+      "extra": {
+        "group_size_histogram": {
+          "1": 26,
+          "2": 27,
+          "3": 834,
+          "4": 44,
+          "5": 1,
+          "6": 276,
+          "9": 13,
+          "12": 7,
+          "13": 28,
+          "14": 2,
+          "15": 66,
+          "16": 8,
+          "20": 20,
+          "24": 1,
+          "25": 1,
+          "26": 1,
+          "28": 2,
+          "29": 8,
+          "30": 100,
+          "31": 1,
+          "32": 1,
+          "35": 3,
+          "39": 2,
+          "40": 32,
+          "43": 1,
+          "45": 1,
+          "50": 1,
+          "60": 2,
+          "65": 1,
+          "75": 1,
+          "80": 2
+        },
+        "largest_group": 80
+      }
+    },
+    {
+      "check": "cross_dataset_duplicates",
+      "status": "warn",
+      "severity": "leakage_critical",
+      "count": 31,
+      "message": "0 images are byte-identical across datasets; 31 cross-dataset perceptual near-duplicates at Hamming<=6",
+      "examples": [
+        {
+          "a": "data/raw/shrimp_disease_image_bd/extracted/Annotated Diseased Shrimp Images/1. BG/images/BG-38-img-2.jpg",
+          "b": "data/raw/tiger_shrimp_bd/black_gill/augmented/aug_1_IMG-20240426-WA0269.jpg",
+          "hamming": 6,
+          "datasets": [
+            "ShrimpDiseaseImageBD",
+            "TigerShrimpBD"
+          ]
+        },
+        {
+          "a": "data/raw/shrimp_disease_image_bd/extracted/Annotated Diseased Shrimp Images/1. BG/images/BG-38-img-2.jpg",
+          "b": "data/raw/tiger_shrimp_bd/black_gill/augmented/aug_4_IMG-20240426-WA0269.jpg",
+          "hamming": 6,
+          "datasets": [
+            "ShrimpDiseaseImageBD",
+            "TigerShrimpBD"
+          ]
+        },
+        {
+          "a": "data/raw/shrimp_disease_image_bd/extracted/Annotated Diseased Shrimp Images/1. BG/images/BG-38-img-2.jpg",
+          "b": "data/raw/tiger_shrimp_bd/black_gill/augmented/aug_6_IMG-20240426-WA0269.jpg",
+          "hamming": 6,
+          "datasets": [
+            "ShrimpDiseaseImageBD",
+            "TigerShrimpBD"
+          ]
+        },
+        {
+          "a": "data/raw/shrimp_disease_image_bd/extracted/Annotated Diseased Shrimp Images/2. WSSV/images/WSSV-70-img-1.jpg",
+          "b": "data/raw/tiger_shrimp_bd/healthy/augmented/resized_IMG-20240707-WA0181.jpg",
+          "hamming": 4,
+          "datasets": [
+            "ShrimpDiseaseImageBD",
+            "TigerShrimpBD"
+          ]
+        },
+        {
+          "a": "data/raw/shrimp_disease_image_bd/extracted/Annotated Diseased Shrimp Images/2. WSSV/images/WSSV-70-img-1.jpg",
+          "b": "data/raw/tiger_shrimp_bd/healthy/augmented/resized_IMG-20240707-WA0184.jpg",
+          "hamming": 6,
+          "datasets": [
+            "ShrimpDiseaseImageBD",
+            "TigerShrimpBD"
+          ]
+        },
+        {
+          "a": "data/raw/shrimp_disease_image_bd/extracted/Annotated Diseased Shrimp Images/2. WSSV/images/WSSV-70-img-1.jpg",
+          "b": "data/raw/tiger_shrimp_bd/healthy/augmented/resized_IMG-20240710-WA0070.jpg",
+          "hamming": 6,
+          "datasets": [
+            "ShrimpDiseaseImageBD",
+            "TigerShrimpBD"
+          ]
+        },
+        {
+          "a": "data/raw/shrimp_disease_image_bd/extracted/Annotated Diseased Shrimp Images/2. WSSV/images/WSSV-70-img-1.jpg",
+          "b": "data/raw/tiger_shrimp_bd/healthy/original/IMG-20240707-WA0181.jpg",
+          "hamming": 4,
+          "datasets": [
+            "ShrimpDiseaseImageBD",
+            "TigerShrimpBD"
+          ]
+        },
+        {
+          "a": "data/raw/shrimp_disease_image_bd/extracted/Annotated Diseased Shrimp Images/2. WSSV/images/WSSV-70-img-1.jpg",
+          "b": "data/raw/tiger_shrimp_bd/healthy/original/IMG-20240707-WA0184.jpg",
+          "hamming": 6,
+          "datasets": [
+            "ShrimpDiseaseImageBD",
+            "TigerShrimpBD"
+          ]
+        },
+        {
+          "a": "data/raw/shrimp_disease_image_bd/extracted/Annotated Diseased Shrimp Images/2. WSSV/images/WSSV-70-img-2.jpg",
+          "b": "data/raw/tiger_shrimp_bd/healthy/augmented/resized_IMG-20240707-WA0181.jpg",
+          "hamming": 4,
+          "datasets": [
+            "ShrimpDiseaseImageBD",
+            "TigerShrimpBD"
+          ]
+        },
+        {
+          "a": "data/raw/shrimp_disease_image_bd/extracted/Annotated Diseased Shrimp Images/2. WSSV/images/WSSV-70-img-2.jpg",
+          "b": "data/raw/tiger_shrimp_bd/healthy/augmented/resized_IMG-20240707-WA0184.jpg",
+          "hamming": 6,
+          "datasets": [
+            "ShrimpDiseaseImageBD",
+            "TigerShrimpBD"
+          ]
+        },
+        {
+          "a": "data/raw/shrimp_disease_image_bd/extracted/Annotated Diseased Shrimp Images/2. WSSV/images/WSSV-70-img-2.jpg",
+          "b": "data/raw/tiger_shrimp_bd/healthy/augmented/resized_IMG-20240710-WA0070.jpg",
+          "hamming": 6,
+          "datasets": [
+            "ShrimpDiseaseImageBD",
+            "TigerShrimpBD"
+          ]
+        },
+        {
+          "a": "data/raw/shrimp_disease_image_bd/extracted/Annotated Diseased Shrimp Images/2. WSSV/images/WSSV-70-img-2.jpg",
+          "b": "data/raw/tiger_shrimp_bd/healthy/original/IMG-20240707-WA0181.jpg",
+          "hamming": 4,
+          "datasets": [
+            "ShrimpDiseaseImageBD",
+            "TigerShrimpBD"
+          ]
+        },
+        {
+          "a": "data/raw/shrimp_disease_image_bd/extracted/Annotated Diseased Shrimp Images/2. WSSV/images/WSSV-70-img-2.jpg",
+          "b": "data/raw/tiger_shrimp_bd/healthy/original/IMG-20240707-WA0184.jpg",
+          "hamming": 6,
+          "datasets": [
+            "ShrimpDiseaseImageBD",
+            "TigerShrimpBD"
+          ]
+        },
+        {
+          "a": "data/raw/shrimp_disease_image_bd/extracted/Raw Images/2. BG/BG-38-img-2.jpg",
+          "b": "data/raw/tiger_shrimp_bd/black_gill/augmented/aug_1_IMG-20240426-WA0269.jpg",
+          "hamming": 6,
+          "datasets": [
+            "ShrimpDiseaseImageBD",
+            "TigerShrimpBD"
+          ]
+        },
+        {
+          "a": "data/raw/shrimp_disease_image_bd/extracted/Raw Images/2. BG/BG-38-img-2.jpg",
+          "b": "data/raw/tiger_shrimp_bd/black_gill/augmented/aug_4_IMG-20240426-WA0269.jpg",
+          "hamming": 6,
+          "datasets": [
+            "ShrimpDiseaseImageBD",
+            "TigerShrimpBD"
+          ]
+        }
+      ],
+      "extra": {
+        "n_exact_cross_dataset": 0
+      }
+    },
+    {
+      "check": "raw_annotated_pairing",
+      "status": "pass",
+      "severity": "leakage_critical",
+      "count": 746,
+      "message": "746 annotated copies, 746 share a stem with a raw image; 746 (100.0%) are fused into the same group. Annotated copies are excluded from the primary disease pool so they are never counted as independent samples.",
+      "examples": [
+        "bg-1-img-1",
+        "bg-1-img-2",
+        "bg-1-img-3",
+        "bg-10-img-1",
+        "bg-10-img-2",
+        "bg-10-img-3",
+        "bg-11-img-1",
+        "bg-11-img-2",
+        "bg-11-img-3",
+        "bg-12-img-1"
+      ],
+      "extra": {
+        "n_annotated": 746,
+        "n_raw": 1149,
+        "fraction_grouped": 1.0
+      }
+    },
+    {
+      "check": "invalid_dimensions",
+      "status": "pass",
+      "severity": "leakage_critical",
+      "count": 0,
+      "message": "0 images report a non-positive dimension",
+      "examples": [],
+      "extra": {}
+    },
+    {
+      "check": "extreme_aspect_ratio",
+      "status": "pass",
+      "severity": "informational",
+      "count": 0,
+      "message": "0 images fall outside aspect ratio [0.2, 5.0]; letterbox resizing preserves them without distortion",
+      "examples": [],
+      "extra": {
+        "ar_min": 0.5625,
+        "ar_max": 1.7777777777777777
+      }
+    },
+    {
+      "check": "empty_classes",
+      "status": "pass",
+      "severity": "leakage_critical",
+      "count": 0,
+      "message": "classes present in the schema but with zero images",
+      "examples": [],
+      "extra": {
+        "class_counts": {
+          "ShrimpDiseaseImageBD|BG": 396,
+          "ShrimpDiseaseImageBD|BG_WSSV": 440,
+          "ShrimpDiseaseImageBD|Healthy": 403,
+          "ShrimpDiseaseImageBD|WSSV": 656,
+          "TigerShrimpBD|Black Gill": 893,
+          "TigerShrimpBD|Healthy": 1269,
+          "TigerShrimpBD|WSSV": 1467,
+          "TigerShrimpBD|Yellow Head": 946
+        }
+      }
+    },
+    {
+      "check": "label_spelling_variants",
+      "status": "pass",
+      "severity": "informational",
+      "count": 8,
+      "message": "canonical raw classes observed after normalisation",
+      "examples": [
+        "ShrimpDiseaseImageBD: ['BG', 'BG_WSSV', 'Healthy', 'WSSV']",
+        "TigerShrimpBD: ['Black Gill', 'Healthy', 'WSSV', 'Yellow Head']"
+      ],
+      "extra": {}
+    },
+    {
+      "check": "filename_collisions",
+      "status": "warn",
+      "severity": "informational",
+      "count": 2489,
+      "message": "2489 filenames occur more than once across the corpus (identical names in different class folders are expected)",
+      "examples": [
+        {
+          "filename": "s10_1.png",
+          "n": 5,
+          "distinct_sha256": 5,
+          "datasets": [
+            "BiomassVannamei"
+          ]
+        },
+        {
+          "filename": "s10_10.png",
+          "n": 5,
+          "distinct_sha256": 5,
+          "datasets": [
+            "BiomassVannamei"
+          ]
+        },
+        {
+          "filename": "s10_11.png",
+          "n": 5,
+          "distinct_sha256": 5,
+          "datasets": [
+            "BiomassVannamei"
+          ]
+        },
+        {
+          "filename": "s10_12.png",
+          "n": 5,
+          "distinct_sha256": 5,
+          "datasets": [
+            "BiomassVannamei"
+          ]
+        },
+        {
+          "filename": "s10_13.png",
+          "n": 5,
+          "distinct_sha256": 5,
+          "datasets": [
+            "BiomassVannamei"
+          ]
+        },
+        {
+          "filename": "s10_14.png",
+          "n": 5,
+          "distinct_sha256": 5,
+          "datasets": [
+            "BiomassVannamei"
+          ]
+        },
+        {
+          "filename": "s10_15.png",
+          "n": 5,
+          "distinct_sha256": 5,
+          "datasets": [
+            "BiomassVannamei"
+          ]
+        },
+        {
+          "filename": "s10_16.png",
+          "n": 5,
+          "distinct_sha256": 5,
+          "datasets": [
+            "BiomassVannamei"
+          ]
+        },
+        {
+          "filename": "s10_17.png",
+          "n": 5,
+          "distinct_sha256": 5,
+          "datasets": [
+            "BiomassVannamei"
+          ]
+        },
+        {
+          "filename": "s10_18.png",
+          "n": 5,
+          "distinct_sha256": 5,
+          "datasets": [
+            "BiomassVannamei"
+          ]
+        }
+      ],
+      "extra": {}
+    },
+    {
+      "check": "published_augmentations",
+      "status": "warn",
+      "severity": "leakage_critical",
+      "count": 3574,
+      "message": "1001 originals and 3574 published augmented copies. 3136 augmented images (87.7%) share a fused group with a published original. The remaining 438 form 52 families whose source photographs were NOT published in the originals folders (0 of those stems match a published original, i.e. this is a property of the source data, not a tracing failure). Those families are still fused among themselves, so no augmented sibling can straddle a split.",
+      "examples": [
+        "img-20240414-wa0084",
+        "img-20240414-wa0133",
+        "img-20240414-wa0139",
+        "img-20240414-wa0190",
+        "img-20240414-wa0191",
+        "img-20240414-wa0192",
+        "img-20240414-wa0214",
+        "img-20240414-wa0217"
+      ],
+      "extra": {
+        "n_original": 1001,
+        "n_augmented": 3574,
+        "n_orphan_augmented": 438,
+        "n_orphan_families": 52,
+        "n_orphan_stems_matching_a_published_original": 0,
+        "orphan_siblings_correctly_fused": false,
+        "fraction_traced_to_published_original": 0.8774
+      }
+    },
+    {
+      "check": "label_mask_integrity",
+      "status": "pass",
+      "severity": "leakage_critical",
+      "count": 0,
+      "message": "supervision masks must mark unknown labels, never encode them as 0",
+      "examples": [],
+      "extra": {
+        "black_gill": {
+          "supervised": 6470,
+          "positive": 1729
+        },
+        "wssv": {
+          "supervised": 6470,
+          "positive": 2563
+        },
+        "yellow_head": {
+          "supervised": 4575,
+          "positive": 946
+        }
+      }
+    },
+    {
+      "check": "class_session_confound",
+      "status": "fail",
+      "severity": "informational",
+      "count": 100,
+      "message": "Health label vs capture session. ShrimpDiseaseImageBD: no timestamp in filenames; confound not testable; TigerShrimpBD: 100.0% of images sit in sessions containing only ONE health class (13/13 sessions). COMPLETE CONFOUND: the health label is perfectly determined by acquisition session, so within-dataset healthy-vs-diseased scores on that dataset cannot be attributed to disease recognition.",
+      "examples": [
+        {
+          "dataset": "ShrimpDiseaseImageBD",
+          "sessions_recoverable": false,
+          "note": "no timestamp in filenames; confound not testable"
+        },
+        {
+          "dataset": "TigerShrimpBD",
+          "sessions_recoverable": true,
+          "n_sessions": 13,
+          "n_sessions_single_health_class": 13,
+          "n_images_in_single_class_sessions": 1001,
+          "n_images_with_session": 1001,
+          "fraction_confounded": 1.0,
+          "sessions": {
+            "20240414": {
+              "diseased": 36,
+              "healthy": 0
+            },
+            "20240421": {
+              "diseased": 68,
+              "healthy": 0
+            },
+            "20240422": {
+              "diseased": 18,
+              "healthy": 0
+            },
+            "20240423": {
+              "diseased": 159,
+              "healthy": 0
+            },
+            "20240424": {
+              "diseased": 56,
+              "healthy": 0
+            },
+            "20240425": {
+              "diseased": 59,
+              "healthy": 0
+            },
+            "20240426": {
+              "diseased": 56,
+              "healthy": 0
+            },
+            "20240427": {
+              "diseased": 126,
+              "healthy": 0
+            },
+            "20240624": {
+              "diseased": 0,
+              "healthy": 35
+            },
+            "20240625": {
+              "diseased": 0,
+              "healthy": 145
+            },
+            "20240707": {
+              "diseased": 0,
+              "healthy": 112
+            },
+            "20240709": {
+              "diseased": 0,
+              "healthy": 61
+            },
+            "20240710": {
+              "diseased": 0,
+              "healthy": 70
+            }
+          }
+        }
+      ],
+      "extra": {
+        "max_fraction_confounded": 1.0,
+        "interpretation": "1.0 means every image was captured in a session containing only one health class"
+      }
+    },
+    {
+      "check": "biomass_measurement_outliers",
+      "status": "warn",
+      "severity": "informational",
+      "count": 2,
+      "message": "2 individual(s) have measurements inconsistent with the population length-weight relationship (|z| > 3.5), affecting 50 images. Retained and flagged, never deleted.",
+      "examples": [
+        {
+          "individual_id": "DB1_s002",
+          "test": "allometric_residual",
+          "db": "DB1",
+          "length_cm": 14.4,
+          "weight_g": 33.0,
+          "expected_weight_g": 65.42,
+          "residual_z": -4.84,
+          "n_images_affected": 20
+        },
+        {
+          "individual_id": "DB5_s005",
+          "test": "allometric_residual",
+          "db": "DB5",
+          "length_cm": 8.34,
+          "weight_g": 6.0,
+          "expected_weight_g": 10.2,
+          "residual_z": -3.75,
+          "n_images_affected": 30
+        }
+      ],
+      "extra": {
+        "allometric_fit": {
+          "a": -4.8948,
+          "b": 3.4026,
+          "residual_sd_log": 0.1414,
+          "n": 170
+        },
+        "cephalothorax_length_ratio": {
+          "mean": 0.3162,
+          "sd": 0.0298,
+          "n": 148
+        },
+        "n_individuals_flagged": 2,
+        "n_images_affected": 50,
+        "z_threshold": 3.5,
+        "individuals": [
+          "DB1_s002",
+          "DB5_s005"
+        ],
+        "method": "allometric residual on log(W) ~ log(L), plus cephalothorax/length ratio; marginal within-pond z-scores deliberately not used"
+      }
+    },
+    {
+      "check": "images_without_measurements",
+      "status": "pass",
+      "severity": "informational",
+      "count": 0,
+      "message": "0 biomass images have no joined weight measurement",
+      "examples": [],
+      "extra": {}
+    },
+    {
+      "check": "measurements_without_images",
+      "status": "pass",
+      "severity": "informational",
+      "count": 0,
+      "message": "0 spreadsheet rows have no matching image",
+      "examples": [],
+      "extra": {}
+    },
+    {
+      "check": "unparsable_image_names",
+      "status": "pass",
+      "severity": "leakage_critical",
+      "count": 0,
+      "message": "0 biomass filenames do not match the s<m>_<n> pattern, so their individual identity cannot be recovered",
+      "examples": [],
+      "extra": {}
+    },
+    {
+      "check": "implausible_measurements",
+      "status": "pass",
+      "severity": "informational",
+      "count": 0,
+      "message": "0 individuals carry a physically implausible measurement flag (retained, flagged, not deleted)",
+      "examples": [],
+      "extra": {}
+    },
+    {
+      "check": "biomass_individual_coverage",
+      "status": "pass",
+      "severity": "informational",
+      "count": 170,
+      "message": "170 individuals, 5507 images, median 30 views/individual",
+      "examples": [],
+      "extra": {
+        "views_per_individual": {
+          "min": 15,
+          "median": 30.0,
+          "max": 80
+        },
+        "by_db": {
+          "DB1": {
+            "n_images": 490,
+            "n_individuals_in_images": 22,
+            "n_individuals_in_sheet": 22
+          },
+          "DB2": {
+            "n_images": 2002,
+            "n_individuals_in_images": 58,
+            "n_individuals_in_sheet": 58
+          },
+          "DB3": {
+            "n_images": 1719,
+            "n_individuals_in_images": 50,
+            "n_individuals_in_sheet": 50
+          },
+          "DB4": {
+            "n_images": 635,
+            "n_individuals_in_images": 20,
+            "n_individuals_in_sheet": 20
+          },
+          "DB5": {
+            "n_images": 661,
+            "n_individuals_in_images": 20,
+            "n_individuals_in_sheet": 20
+          }
+        }
+      }
+    },
+    {
+      "check": "sdibd_unparsable_image_names",
+      "status": "pass",
+      "severity": "leakage_critical",
+      "count": 0,
+      "message": "0 ShrimpDiseaseImageBD filenames do not match <CLASS>-<n>-img-<v>, so their animal identity cannot be recovered",
+      "examples": [],
+      "extra": {}
+    },
+    {
+      "check": "sdibd_class_token_mismatch",
+      "status": "pass",
+      "severity": "informational",
+      "count": 0,
+      "message": "0 ShrimpDiseaseImageBD filenames carry a class token that differs from their folder class (id scoped by folder)",
+      "examples": [],
+      "extra": {}
+    }
+  ]
+}

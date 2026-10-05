@@ -1,0 +1,256 @@
+{
+  "_meta": {
+    "what": "Length-only forest versus length plus out-of-fold image predictions",
+    "features": {
+      "rf_length": [
+        "length_cm"
+      ],
+      "rf_length_plus_image": [
+        "length_cm",
+        "pred_log_weight",
+        "pred_length_cm"
+      ]
+    },
+    "out_of_fold": "each animal feature comes from a fold that held that animal out",
+    "model": {
+      "n_estimators": 300,
+      "min_samples_leaf": 2,
+      "random_state": 42
+    },
+    "delta_mae": "mae_rf_length_plus_image - mae_rf_length",
+    "seeds": [
+      42,
+      2026,
+      3407
+    ],
+    "bootstrap_and_forest_seed": 42,
+    "per_seed": [
+      {
+        "seed": 42,
+        "held_out_db": "DB1",
+        "n_test": 22,
+        "n_train": 118,
+        "mae_rf_length": 3.4018601754656697,
+        "r2_rf_length": 0.3291665444116444,
+        "mae_rf_length_plus_image": 3.0040282642441762,
+        "r2_rf_length_plus_image": 0.40756423816595677,
+        "delta_mae": -0.3978319112214934
+      },
+      {
+        "seed": 42,
+        "held_out_db": "DB2",
+        "n_test": 58,
+        "n_train": 90,
+        "mae_rf_length": 2.5804990164688366,
+        "r2_rf_length": 0.7551989542251822,
+        "mae_rf_length_plus_image": 3.0480529784710866,
+        "r2_rf_length_plus_image": 0.6266091454768494,
+        "delta_mae": 0.46755396200224997
+      },
+      {
+        "seed": 42,
+        "held_out_db": "DB3",
+        "n_test": 50,
+        "n_train": 96,
+        "mae_rf_length": 2.4872116741440653,
+        "r2_rf_length": 0.6675072325512506,
+        "mae_rf_length_plus_image": 2.3679414814814854,
+        "r2_rf_length_plus_image": 0.6937359286827542,
+        "delta_mae": -0.11927019266257988
+      },
+      {
+        "seed": 42,
+        "held_out_db": "DB4",
+        "n_test": 20,
+        "n_train": 120,
+        "mae_rf_length": 0.5420371693121695,
+        "r2_rf_length": 0.7760077263770988,
+        "mae_rf_length_plus_image": 0.6069529761904757,
+        "r2_rf_length_plus_image": 0.7537438689016634,
+        "delta_mae": 0.06491580687830623
+      },
+      {
+        "seed": 42,
+        "held_out_db": "DB5",
+        "n_test": 20,
+        "n_train": 120,
+        "mae_rf_length": 0.5889301295926296,
+        "r2_rf_length": 0.5761288599573173,
+        "mae_rf_length_plus_image": 0.5907847222222229,
+        "r2_rf_length_plus_image": 0.6051546703286026,
+        "delta_mae": 0.0018545926295933102
+      },
+      {
+        "seed": 2026,
+        "held_out_db": "DB1",
+        "n_test": 22,
+        "n_train": 118,
+        "mae_rf_length": 3.40186017546567,
+        "r2_rf_length": 0.3291665444116446,
+        "mae_rf_length_plus_image": 3.3842790923302246,
+        "r2_rf_length_plus_image": 0.3546712910608677,
+        "delta_mae": -0.017581083135445486
+      },
+      {
+        "seed": 2026,
+        "held_out_db": "DB2",
+        "n_test": 58,
+        "n_train": 90,
+        "mae_rf_length": 2.5804990164688353,
+        "r2_rf_length": 0.7551989542251825,
+        "mae_rf_length_plus_image": 2.7520730592045246,
+        "r2_rf_length_plus_image": 0.7386466083060639,
+        "delta_mae": 0.17157404273568932
+      },
+      {
+        "seed": 2026,
+        "held_out_db": "DB3",
+        "n_test": 50,
+        "n_train": 96,
+        "mae_rf_length": 2.487211674144064,
+        "r2_rf_length": 0.6675072325512508,
+        "mae_rf_length_plus_image": 3.577729417989419,
+        "r2_rf_length_plus_image": 0.37018846474135436,
+        "delta_mae": 1.0905177438453548
+      },
+      {
+        "seed": 2026,
+        "held_out_db": "DB4",
+        "n_test": 20,
+        "n_train": 120,
+        "mae_rf_length": 0.5420371693121689,
+        "r2_rf_length": 0.7760077263770994,
+        "mae_rf_length_plus_image": 0.5107431216931216,
+        "r2_rf_length_plus_image": 0.802767272464742,
+        "delta_mae": -0.031294047619047305
+      },
+      {
+        "seed": 2026,
+        "held_out_db": "DB5",
+        "n_test": 20,
+        "n_train": 120,
+        "mae_rf_length": 0.5889301295926297,
+        "r2_rf_length": 0.5761288599573173,
+        "mae_rf_length_plus_image": 0.8930998015873051,
+        "r2_rf_length_plus_image": 0.2393422644479053,
+        "delta_mae": 0.3041696719946754
+      },
+      {
+        "seed": 3407,
+        "held_out_db": "DB1",
+        "n_test": 22,
+        "n_train": 118,
+        "mae_rf_length": 3.401860175465666,
+        "r2_rf_length": 0.3291665444116446,
+        "mae_rf_length_plus_image": 2.7459603393239718,
+        "r2_rf_length_plus_image": 0.42453578380141666,
+        "delta_mae": -0.6558998361416943
+      },
+      {
+        "seed": 3407,
+        "held_out_db": "DB2",
+        "n_test": 58,
+        "n_train": 90,
+        "mae_rf_length": 2.580499016468838,
+        "r2_rf_length": 0.7551989542251818,
+        "mae_rf_length_plus_image": 2.2558180947405084,
+        "r2_rf_length_plus_image": 0.8076386714240673,
+        "delta_mae": -0.3246809217283295
+      },
+      {
+        "seed": 3407,
+        "held_out_db": "DB3",
+        "n_test": 50,
+        "n_train": 96,
+        "mae_rf_length": 2.487211674144063,
+        "r2_rf_length": 0.6675072325512511,
+        "mae_rf_length_plus_image": 2.2931752693602694,
+        "r2_rf_length_plus_image": 0.725103407703606,
+        "delta_mae": -0.1940364047837937
+      },
+      {
+        "seed": 3407,
+        "held_out_db": "DB4",
+        "n_test": 20,
+        "n_train": 120,
+        "mae_rf_length": 0.5420371693121697,
+        "r2_rf_length": 0.7760077263770989,
+        "mae_rf_length_plus_image": 4.034538624338628,
+        "r2_rf_length_plus_image": -7.784938635457236,
+        "delta_mae": 3.4925014550264586
+      },
+      {
+        "seed": 3407,
+        "held_out_db": "DB5",
+        "n_test": 20,
+        "n_train": 120,
+        "mae_rf_length": 0.5889301295926301,
+        "r2_rf_length": 0.5761288599573166,
+        "mae_rf_length_plus_image": 1.7068583333333343,
+        "r2_rf_length_plus_image": -0.5500261548856333,
+        "delta_mae": 1.1179282037407041
+      }
+    ],
+    "sources": [
+      "data/manifests/unified_manifest.parquet",
+      "data/splits/splits.parquet",
+      "outputs/predictions/E4_biomass_single_image_f*_s42_biomass_test.parquet",
+      "outputs/predictions/E4_biomass_single_image_f*_s2026_biomass_test.parquet",
+      "outputs/predictions/E4_biomass_single_image_f*_s3407_biomass_test.parquet"
+    ],
+    "git_head": "unknown",
+    "written_by": "scripts/reviewer (t_tabular_tier)"
+  },
+  "rows": [
+    {
+      "held_out_db": "DB1",
+      "n_test": 22,
+      "n_train": 118,
+      "mae_rf_length": 3.4018601755,
+      "r2_rf_length": 0.3291665444,
+      "mae_rf_length_plus_image": 3.0447558986,
+      "r2_rf_length_plus_image": 0.3955904377,
+      "delta_mae": -0.3571042768
+    },
+    {
+      "held_out_db": "DB2",
+      "n_test": 58,
+      "n_train": 90,
+      "mae_rf_length": 2.5804990165,
+      "r2_rf_length": 0.7551989542,
+      "mae_rf_length_plus_image": 2.6853147108,
+      "r2_rf_length_plus_image": 0.7242981417,
+      "delta_mae": 0.1048156943
+    },
+    {
+      "held_out_db": "DB3",
+      "n_test": 50,
+      "n_train": 96,
+      "mae_rf_length": 2.4872116741,
+      "r2_rf_length": 0.6675072326,
+      "mae_rf_length_plus_image": 2.7462820563,
+      "r2_rf_length_plus_image": 0.5963426004,
+      "delta_mae": 0.2590703821
+    },
+    {
+      "held_out_db": "DB4",
+      "n_test": 20,
+      "n_train": 120,
+      "mae_rf_length": 0.5420371693,
+      "r2_rf_length": 0.7760077264,
+      "mae_rf_length_plus_image": 1.7174115741,
+      "r2_rf_length_plus_image": -2.076142498,
+      "delta_mae": 1.1753744048
+    },
+    {
+      "held_out_db": "DB5",
+      "n_test": 20,
+      "n_train": 120,
+      "mae_rf_length": 0.5889301296,
+      "r2_rf_length": 0.57612886,
+      "mae_rf_length_plus_image": 1.0635809524,
+      "r2_rf_length_plus_image": 0.0981569266,
+      "delta_mae": 0.4746508228
+    }
+  ]
+}

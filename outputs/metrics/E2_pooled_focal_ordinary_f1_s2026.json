@@ -1,0 +1,200 @@
+{
+  "run_name": "E2_pooled_focal_ordinary_f1_s2026",
+  "fold": 1,
+  "seed": 2026,
+  "experiment": "E2",
+  "config_name": "E2_pooled_focal_ordinary",
+  "disease": {
+    "health": {
+      "accuracy": 0.9350348027842227,
+      "balanced_accuracy": 0.9325414867015231,
+      "precision": 0.9505703422053232,
+      "recall": 0.9433962264150944,
+      "f1": 0.9469696969696969,
+      "auroc": 0.9888156399181632,
+      "average_precision": 0.9928582000203335,
+      "brier": 0.05233523119735749,
+      "ece": 0.04712730473583497,
+      "tn": 153,
+      "fp": 13,
+      "fn": 15,
+      "tp": 250,
+      "n": 431
+    },
+    "attributes": {
+      "black_gill": {
+        "precision": 0.6842105263157895,
+        "recall": 0.5714285714285714,
+        "f1": 0.622754491017964,
+        "average_precision": 0.6379652977948059,
+        "auroc": 0.860245636716225,
+        "support_pos": 91,
+        "support_supervised": 431,
+        "brier": 0.12383892363605084,
+        "ece": 0.0945099872829211
+      },
+      "wssv": {
+        "precision": 0.8849557522123894,
+        "recall": 0.9615384615384616,
+        "f1": 0.9216589861751152,
+        "average_precision": 0.9458749656881207,
+        "auroc": 0.9639315281131424,
+        "support_pos": 208,
+        "support_supervised": 431,
+        "brier": 0.10571403948461484,
+        "ece": 0.16152833542733058
+      },
+      "yellow_head": {
+        "precision": 0.8,
+        "recall": 0.8,
+        "f1": 0.8000000000000002,
+        "average_precision": 0.911024531024531,
+        "auroc": 0.9947643979057591,
+        "support_pos": 10,
+        "support_supervised": 201,
+        "brier": 0.02630235375787273,
+        "ece": 0.07541233566123413
+      },
+      "macro_f1": 0.7814711590643598,
+      "micro_f1": 0.8373590982286636,
+      "macro_map": 0.8316215981691525,
+      "hamming_loss": 0.09501411100658513,
+      "exact_match_ratio": 0.9502487562189055,
+      "n_rows": 431,
+      "n_supervised": 1063,
+      "n_rows_fully_supervised": 201
+    },
+    "n": 431,
+    "by_source": {
+      "ShrimpDiseaseImageBD": {
+        "n": 230,
+        "health": {
+          "accuracy": 0.8782608695652174,
+          "balanced_accuracy": 0.8694175159499544,
+          "precision": 0.9115646258503401,
+          "recall": 0.8993288590604027,
+          "f1": 0.9054054054054055,
+          "auroc": 0.9592344021874224,
+          "average_precision": 0.9768471852756176,
+          "brier": 0.09807133781313268,
+          "ece": 0.08850963928764585,
+          "tn": 68,
+          "fp": 13,
+          "fn": 15,
+          "tp": 134,
+          "n": 230
+        },
+        "attributes": {
+          "black_gill": {
+            "precision": 0.6842105263157895,
+            "recall": 0.6265060240963856,
+            "f1": 0.6540880503144654,
+            "average_precision": 0.6786213542039831,
+            "auroc": 0.8009179575444636,
+            "support_pos": 83,
+            "support_supervised": 230,
+            "brier": 0.19669036649090033,
+            "ece": 0.15719064174969075
+          },
+          "wssv": {
+            "precision": 0.85,
+            "recall": 0.9272727272727272,
+            "f1": 0.8869565217391303,
+            "average_precision": 0.9078211388168953,
+            "auroc": 0.938939393939394,
+            "support_pos": 110,
+            "support_supervised": 230,
+            "brier": 0.14029813116087164,
+            "ece": 0.1923029918162881
+          },
+          "yellow_head": {
+            "precision": NaN,
+            "recall": NaN,
+            "f1": NaN,
+            "average_precision": NaN,
+            "auroc": NaN,
+            "support_pos": 0,
+            "support_supervised": 0,
+            "brier": NaN,
+            "ece": NaN
+          },
+          "macro_f1": 0.7705222860267978,
+          "micro_f1": 0.7917737789203083,
+          "macro_map": 0.7932212465104391,
+          "hamming_loss": 0.17608695652173914,
+          "exact_match_ratio": NaN,
+          "n_rows": 230,
+          "n_supervised": 460,
+          "n_rows_fully_supervised": 0
+        }
+      },
+      "TigerShrimpBD": {
+        "n": 201,
+        "health": {
+          "accuracy": 1.0,
+          "balanced_accuracy": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auroc": 1.0,
+          "average_precision": 1.0,
+          "brier": 3.82831047559827e-07,
+          "ece": 0.0002256153980779707,
+          "tn": 85,
+          "fp": 0,
+          "fn": 0,
+          "tp": 116,
+          "n": 201
+        },
+        "attributes": {
+          "black_gill": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "average_precision": 0.23330087198289512,
+            "auroc": 0.8613989637305701,
+            "support_pos": 8,
+            "support_supervised": 201,
+            "brier": 0.04047657609070065,
+            "ece": 0.06249655183898146
+          },
+          "wssv": {
+            "precision": 0.9245283018867925,
+            "recall": 1.0,
+            "f1": 0.9607843137254902,
+            "average_precision": 0.967534437743,
+            "auroc": 0.9825638993461463,
+            "support_pos": 98,
+            "support_supervised": 201,
+            "brier": 0.0661402032381519,
+            "ece": 0.13935815168582877
+          },
+          "yellow_head": {
+            "precision": 0.8,
+            "recall": 0.8,
+            "f1": 0.8000000000000002,
+            "average_precision": 0.911024531024531,
+            "auroc": 0.9947643979057591,
+            "support_pos": 10,
+            "support_supervised": 201,
+            "brier": 0.02630235375787273,
+            "ece": 0.07541233566123413
+          },
+          "macro_f1": 0.5869281045751634,
+          "micro_f1": 0.9137931034482759,
+          "macro_map": 0.703953280250142,
+          "hamming_loss": 0.03316749585406302,
+          "exact_match_ratio": 0.9502487562189055,
+          "n_rows": 201,
+          "n_supervised": 603,
+          "n_rows_fully_supervised": 201
+        }
+      }
+    }
+  },
+  "thresholds": [
+    0.41000000000000003,
+    0.4,
+    0.34
+  ]
+}

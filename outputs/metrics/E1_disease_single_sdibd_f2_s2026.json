@@ -1,0 +1,138 @@
+{
+  "run_name": "E1_disease_single_sdibd_f2_s2026",
+  "fold": 2,
+  "seed": 2026,
+  "experiment": "E1",
+  "config_name": "E1_disease_single_sdibd",
+  "disease": {
+    "health": {
+      "accuracy": 0.8427947598253275,
+      "balanced_accuracy": 0.8415687919463087,
+      "precision": 0.9064748201438849,
+      "recall": 0.8456375838926175,
+      "f1": 0.875,
+      "auroc": 0.9020973154362415,
+      "average_precision": 0.9497459384068958,
+      "brier": 0.12671618484816,
+      "ece": 0.11224336400790766,
+      "tn": 67,
+      "fp": 13,
+      "fn": 23,
+      "tp": 126,
+      "n": 229
+    },
+    "attributes": {
+      "black_gill": {
+        "precision": 0.48,
+        "recall": 0.7142857142857143,
+        "f1": 0.5741626794258373,
+        "average_precision": 0.7457590287389466,
+        "auroc": 0.7805418719211823,
+        "support_pos": 84,
+        "support_supervised": 229,
+        "brier": 0.1867021054552418,
+        "ece": 0.15784879083090408
+      },
+      "wssv": {
+        "precision": 0.7642857142857142,
+        "recall": 0.981651376146789,
+        "f1": 0.859437751004016,
+        "average_precision": 0.9272959412339897,
+        "auroc": 0.9331039755351682,
+        "support_pos": 109,
+        "support_supervised": 229,
+        "brier": 0.11061709412608339,
+        "ece": 0.09192656460075789
+      },
+      "yellow_head": {
+        "precision": NaN,
+        "recall": NaN,
+        "f1": NaN,
+        "average_precision": NaN,
+        "auroc": NaN,
+        "support_pos": 0,
+        "support_supervised": 0,
+        "brier": NaN,
+        "ece": NaN
+      },
+      "macro_f1": 0.7168002152149267,
+      "micro_f1": 0.7292576419213973,
+      "macro_map": 0.8365274849864681,
+      "hamming_loss": 0.27074235807860264,
+      "exact_match_ratio": NaN,
+      "n_rows": 229,
+      "n_supervised": 458,
+      "n_rows_fully_supervised": 0
+    },
+    "n": 229,
+    "by_source": {
+      "ShrimpDiseaseImageBD": {
+        "n": 229,
+        "health": {
+          "accuracy": 0.8427947598253275,
+          "balanced_accuracy": 0.8415687919463087,
+          "precision": 0.9064748201438849,
+          "recall": 0.8456375838926175,
+          "f1": 0.875,
+          "auroc": 0.9020973154362415,
+          "average_precision": 0.9497459384068958,
+          "brier": 0.12671618484816,
+          "ece": 0.11224336400790766,
+          "tn": 67,
+          "fp": 13,
+          "fn": 23,
+          "tp": 126,
+          "n": 229
+        },
+        "attributes": {
+          "black_gill": {
+            "precision": 0.48,
+            "recall": 0.7142857142857143,
+            "f1": 0.5741626794258373,
+            "average_precision": 0.7457590287389466,
+            "auroc": 0.7805418719211823,
+            "support_pos": 84,
+            "support_supervised": 229,
+            "brier": 0.1867021054552418,
+            "ece": 0.15784879083090408
+          },
+          "wssv": {
+            "precision": 0.7642857142857142,
+            "recall": 0.981651376146789,
+            "f1": 0.859437751004016,
+            "average_precision": 0.9272959412339897,
+            "auroc": 0.9331039755351682,
+            "support_pos": 109,
+            "support_supervised": 229,
+            "brier": 0.11061709412608339,
+            "ece": 0.09192656460075789
+          },
+          "yellow_head": {
+            "precision": NaN,
+            "recall": NaN,
+            "f1": NaN,
+            "average_precision": NaN,
+            "auroc": NaN,
+            "support_pos": 0,
+            "support_supervised": 0,
+            "brier": NaN,
+            "ece": NaN
+          },
+          "macro_f1": 0.7168002152149267,
+          "micro_f1": 0.7292576419213973,
+          "macro_map": 0.8365274849864681,
+          "hamming_loss": 0.27074235807860264,
+          "exact_match_ratio": NaN,
+          "n_rows": 229,
+          "n_supervised": 458,
+          "n_rows_fully_supervised": 0
+        }
+      }
+    }
+  },
+  "thresholds": [
+    0.09,
+    0.18000000000000002,
+    0.5
+  ]
+}

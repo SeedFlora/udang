@@ -1,0 +1,51 @@
+{
+  "all_passed": true,
+  "checks": [
+    {
+      "check": "disease_loader",
+      "status": "PASS",
+      "detail": "batch image (8, 3, 224, 224), attrs (8, 3), finite=True",
+      "extra": {}
+    },
+    {
+      "check": "mask_semantics_in_manifest",
+      "status": "PASS",
+      "detail": "every ShrimpDiseaseImageBD row has yellow_head masked as unknown",
+      "extra": {}
+    },
+    {
+      "check": "biomass_loader",
+      "status": "SKIP",
+      "detail": "no biomass split rows; manifest holds 0 biomass records. Biomass experiments (E4-E7) cannot run until the archive is present.",
+      "extra": {}
+    },
+    {
+      "check": "masked_losses_zero_and_finite",
+      "status": "PASS",
+      "detail": "all-zero mask gives exact 0.0; inf at a masked slot does not propagate",
+      "extra": {}
+    },
+    {
+      "check": "overfit_20_samples",
+      "status": "PASS",
+      "detail": "loss 1.4353 -> 0.0000, health accuracy 1.00 (must drop >65% and reach >=0.90)",
+      "extra": {
+        "loss_first": 1.4352524280548096,
+        "loss_last": 1.5664099919376895e-05,
+        "train_accuracy": 1.0
+      }
+    },
+    {
+      "check": "one_epoch_smoke",
+      "status": "PASS",
+      "detail": "epoch completed, predictions and metrics written, health bal_acc=0.500 (190s)",
+      "extra": {}
+    },
+    {
+      "check": "split_leakage",
+      "status": "PASS",
+      "detail": "6 protocols / 22 folds: no group_id appears in more than one split",
+      "extra": {}
+    }
+  ]
+}

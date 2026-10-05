@@ -1,0 +1,40 @@
+{
+  "pipeline_threshold": 6,
+  "manifest_n_groups": 1513,
+  "0": {
+    "n_groups": 1778,
+    "n_near_dup_links": 10196,
+    "largest_group": 80,
+    "n_singletons": 166
+  },
+  "2": {
+    "n_groups": 1623,
+    "n_near_dup_links": 23752,
+    "largest_group": 80,
+    "n_singletons": 41
+  },
+  "4": {
+    "n_groups": 1576,
+    "n_near_dup_links": 32958,
+    "largest_group": 80,
+    "n_singletons": 33
+  },
+  "6": {
+    "n_groups": 1513,
+    "n_near_dup_links": 38520,
+    "largest_group": 80,
+    "n_singletons": 26
+  },
+  "8": {
+    "n_groups": 1355,
+    "n_near_dup_links": 42805,
+    "largest_group": 80,
+    "n_singletons": 21
+  },
+  "10": {
+    "n_groups": 1136,
+    "n_near_dup_links": 47000,
+    "largest_group": 264,
+    "n_singletons": 15
+  }
+}

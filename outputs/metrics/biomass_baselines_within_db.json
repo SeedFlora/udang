@@ -1,0 +1,786 @@
+{
+  "protocol": "biomass_within_db",
+  "folds": {
+    "0": {
+      "held_out_db": [
+        "DB1",
+        "DB2",
+        "DB3",
+        "DB4",
+        "DB5"
+      ],
+      "n_train_individuals": 110,
+      "n_test_individuals": 34,
+      "mean": {
+        "model": "mean_baseline",
+        "information_advantage": "none (constant prediction)",
+        "train_mean_weight_g": 25.186363636363637,
+        "weight": {
+          "mae": 8.544385026737968,
+          "rmse": 10.139796845502394,
+          "mape": 57.10406910208658,
+          "r2": -0.0015732544466722231,
+          "medae": 8.313636363636363,
+          "pearson_r": NaN,
+          "spearman_r": NaN,
+          "n": 34,
+          "unit": "g",
+          "n_mape_excluded": 0,
+          "mape_floor": 0.5
+        },
+        "length": {
+          "mae": 1.2918823529411765,
+          "rmse": 1.5643316934265645,
+          "mape": 13.258265030974112,
+          "r2": -0.005872660301075694,
+          "medae": 1.0859999999999994,
+          "pearson_r": NaN,
+          "spearman_r": NaN,
+          "n": 34,
+          "unit": "cm",
+          "n_mape_excluded": 0,
+          "mape_floor": 0.1
+        }
+      },
+      "allometric": {
+        "model": "allometric_W_eq_a_L_pow_b",
+        "information_advantage": "GROUND-TRUTH manual length (not available to image-only models)",
+        "a": 0.008028973081405271,
+        "b": 3.3738656314402133,
+        "fit_r2_log_space": 0.9490221736546567,
+        "n_train": 110,
+        "n_test": 34,
+        "weight": {
+          "mae": 2.6270617636590905,
+          "rmse": 3.6641069502207424,
+          "mape": 10.656710609052048,
+          "r2": 0.8692142297627812,
+          "medae": 1.835669700143698,
+          "pearson_r": 0.9393426404371055,
+          "spearman_r": 0.9293398817773846,
+          "n": 34,
+          "unit": "g",
+          "n_mape_excluded": 0,
+          "mape_floor": 0.5
+        },
+        "weight_log_space": {
+          "mae": 0.10650424571624215,
+          "rmse": 0.1317407018400264,
+          "mape": 3.7159458378193797,
+          "r2": 0.9394236702250086,
+          "medae": 0.09039661803019028,
+          "pearson_r": 0.9699136754886775,
+          "spearman_r": 0.9293398817773846,
+          "n": 34,
+          "unit": "log_g",
+          "n_mape_excluded": 0,
+          "mape_floor": 1e-06
+        }
+      },
+      "tabular": [
+        {
+          "model": "linear_regression",
+          "features": [
+            "length_cm",
+            "cephalothorax_cm"
+          ],
+          "information_advantage": "GROUND-TRUTH manual length_cm + cephalothorax_cm",
+          "n_train": 96,
+          "n_test": 29,
+          "weight": {
+            "mae": 2.2935008532484567,
+            "rmse": 2.618820939914719,
+            "mape": 12.935574293089996,
+            "r2": 0.9352271226108144,
+            "medae": 2.06763455681876,
+            "pearson_r": 0.9688684467411532,
+            "spearman_r": 0.9106867827360892,
+            "n": 29,
+            "unit": "g",
+            "n_mape_excluded": 0,
+            "mape_floor": 0.5
+          }
+        },
+        {
+          "model": "random_forest",
+          "features": [
+            "length_cm",
+            "cephalothorax_cm"
+          ],
+          "information_advantage": "GROUND-TRUTH manual length_cm + cephalothorax_cm",
+          "n_train": 96,
+          "n_test": 29,
+          "weight": {
+            "mae": 1.7189212294729548,
+            "rmse": 2.302523515874889,
+            "mape": 7.1565650327741634,
+            "r2": 0.9499286006208822,
+            "medae": 1.4002791005291044,
+            "pearson_r": 0.9755225849058411,
+            "spearman_r": 0.9212514266647341,
+            "n": 29,
+            "unit": "g",
+            "n_mape_excluded": 0,
+            "mape_floor": 0.5
+          },
+          "feature_importances": [
+            0.9658,
+            0.0342
+          ]
+        },
+        {
+          "model": "gradient_boosting",
+          "features": [
+            "length_cm",
+            "cephalothorax_cm"
+          ],
+          "information_advantage": "GROUND-TRUTH manual length_cm + cephalothorax_cm",
+          "n_train": 96,
+          "n_test": 29,
+          "weight": {
+            "mae": 1.9590409236675828,
+            "rmse": 2.5040016899000417,
+            "mape": 8.554017718877116,
+            "r2": 0.9407823981604819,
+            "medae": 1.5089839094240425,
+            "pearson_r": 0.9708603940697644,
+            "spearman_r": 0.9040556394650765,
+            "n": 29,
+            "unit": "g",
+            "n_mape_excluded": 0,
+            "mape_floor": 0.5
+          },
+          "feature_importances": [
+            0.9746,
+            0.0254
+          ]
+        }
+      ]
+    },
+    "1": {
+      "held_out_db": [
+        "DB1",
+        "DB2",
+        "DB3",
+        "DB4",
+        "DB5"
+      ],
+      "n_train_individuals": 110,
+      "n_test_individuals": 34,
+      "mean": {
+        "model": "mean_baseline",
+        "information_advantage": "none (constant prediction)",
+        "train_mean_weight_g": 25.54090909090909,
+        "weight": {
+          "mae": 8.80427807486631,
+          "rmse": 10.038672003099045,
+          "mape": 58.4570451329526,
+          "r2": -0.005661477358339884,
+          "medae": 7.459090909090911,
+          "pearson_r": NaN,
+          "spearman_r": NaN,
+          "n": 34,
+          "unit": "g",
+          "n_mape_excluded": 0,
+          "mape_floor": 0.5
+        },
+        "length": {
+          "mae": 1.311475935828879,
+          "rmse": 1.5040205666318953,
+          "mape": 13.216384920644417,
+          "r2": -0.011073645032829038,
+          "medae": 1.135636363636367,
+          "pearson_r": NaN,
+          "spearman_r": NaN,
+          "n": 34,
+          "unit": "cm",
+          "n_mape_excluded": 0,
+          "mape_floor": 0.1
+        }
+      },
+      "allometric": {
+        "model": "allometric_W_eq_a_L_pow_b",
+        "information_advantage": "GROUND-TRUTH manual length (not available to image-only models)",
+        "a": 0.007598584351471652,
+        "b": 3.396712011796486,
+        "fit_r2_log_space": 0.9459703836846867,
+        "n_train": 110,
+        "n_test": 34,
+        "weight": {
+          "mae": 2.3930805639728168,
+          "rmse": 3.2521551313007375,
+          "mape": 8.793784559149072,
+          "r2": 0.8944539966700549,
+          "medae": 1.604803120288329,
+          "pearson_r": 0.9479394203614268,
+          "spearman_r": 0.8762414137512836,
+          "n": 34,
+          "unit": "g",
+          "n_mape_excluded": 0,
+          "mape_floor": 0.5
+        },
+        "weight_log_space": {
+          "mae": 0.08685533645142664,
+          "rmse": 0.10549189296553334,
+          "mape": 2.8025910256309734,
+          "r2": 0.9617270214454733,
+          "medae": 0.07500664364181375,
+          "pearson_r": 0.9812741441011319,
+          "spearman_r": 0.8762414137512836,
+          "n": 34,
+          "unit": "log_g",
+          "n_mape_excluded": 0,
+          "mape_floor": 1e-06
+        }
+      },
+      "tabular": [
+        {
+          "model": "linear_regression",
+          "features": [
+            "length_cm",
+            "cephalothorax_cm"
+          ],
+          "information_advantage": "GROUND-TRUTH manual length_cm + cephalothorax_cm",
+          "n_train": 96,
+          "n_test": 29,
+          "weight": {
+            "mae": 1.8030671903010604,
+            "rmse": 2.1311080453738374,
+            "mape": 8.37687782457719,
+            "r2": 0.9594394732564244,
+            "medae": 2.0752111078905955,
+            "pearson_r": 0.9803290092090791,
+            "spearman_r": 0.86582007125353,
+            "n": 29,
+            "unit": "g",
+            "n_mape_excluded": 0,
+            "mape_floor": 0.5
+          }
+        },
+        {
+          "model": "random_forest",
+          "features": [
+            "length_cm",
+            "cephalothorax_cm"
+          ],
+          "information_advantage": "GROUND-TRUTH manual length_cm + cephalothorax_cm",
+          "n_train": 96,
+          "n_test": 29,
+          "weight": {
+            "mae": 1.5355276218034817,
+            "rmse": 1.8144488704813324,
+            "mape": 6.393920166763024,
+            "r2": 0.9705976448929571,
+            "medae": 1.6200092592592767,
+            "pearson_r": 0.9855279115043478,
+            "spearman_r": 0.870276680141881,
+            "n": 29,
+            "unit": "g",
+            "n_mape_excluded": 0,
+            "mape_floor": 0.5
+          },
+          "feature_importances": [
+            0.9826,
+            0.0174
+          ]
+        },
+        {
+          "model": "gradient_boosting",
+          "features": [
+            "length_cm",
+            "cephalothorax_cm"
+          ],
+          "information_advantage": "GROUND-TRUTH manual length_cm + cephalothorax_cm",
+          "n_train": 96,
+          "n_test": 29,
+          "weight": {
+            "mae": 1.7071262026978167,
+            "rmse": 2.315599656139557,
+            "mape": 6.857918222017363,
+            "r2": 0.9521127826174607,
+            "medae": 1.489495900789997,
+            "pearson_r": 0.9774227452766904,
+            "spearman_r": 0.8125409224784776,
+            "n": 29,
+            "unit": "g",
+            "n_mape_excluded": 0,
+            "mape_floor": 0.5
+          },
+          "feature_importances": [
+            0.9782,
+            0.0218
+          ]
+        }
+      ]
+    },
+    "2": {
+      "held_out_db": [
+        "DB1",
+        "DB2",
+        "DB3",
+        "DB4",
+        "DB5"
+      ],
+      "n_train_individuals": 109,
+      "n_test_individuals": 34,
+      "mean": {
+        "model": "mean_baseline",
+        "information_advantage": "none (constant prediction)",
+        "train_mean_weight_g": 24.68807339449541,
+        "weight": {
+          "mae": 9.319616837560712,
+          "rmse": 10.579981366173136,
+          "mape": 60.813250136045795,
+          "r2": -0.020599809514894707,
+          "medae": 8.311926605504588,
+          "pearson_r": NaN,
+          "spearman_r": NaN,
+          "n": 34,
+          "unit": "g",
+          "n_mape_excluded": 0,
+          "mape_floor": 0.5
+        },
+        "length": {
+          "mae": 1.3883702104695097,
+          "rmse": 1.6342584142113825,
+          "mape": 13.411461651380296,
+          "r2": -0.04860272109328423,
+          "medae": 1.1988990825688086,
+          "pearson_r": NaN,
+          "spearman_r": NaN,
+          "n": 34,
+          "unit": "cm",
+          "n_mape_excluded": 0,
+          "mape_floor": 0.1
+        }
+      },
+      "allometric": {
+        "model": "allometric_W_eq_a_L_pow_b",
+        "information_advantage": "GROUND-TRUTH manual length (not available to image-only models)",
+        "a": 0.007295504218104587,
+        "b": 3.4208592851131696,
+        "fit_r2_log_space": 0.9570481255874649,
+        "n_train": 109,
+        "n_test": 34,
+        "weight": {
+          "mae": 3.3562901888220007,
+          "rmse": 6.614291478879636,
+          "mape": 13.325321675988771,
+          "r2": 0.6011107462889531,
+          "medae": 1.7385862778296355,
+          "pearson_r": 0.8539259729662725,
+          "spearman_r": 0.9351478985835535,
+          "n": 34,
+          "unit": "g",
+          "n_mape_excluded": 0,
+          "mape_floor": 0.5
+        },
+        "weight_log_space": {
+          "mae": 0.12202687745007779,
+          "rmse": 0.17536435534701358,
+          "mape": 4.19081598038113,
+          "r2": 0.9028480204672074,
+          "medae": 0.09004584876255883,
+          "pearson_r": 0.9530312314761025,
+          "spearman_r": 0.9351478985835535,
+          "n": 34,
+          "unit": "log_g",
+          "n_mape_excluded": 0,
+          "mape_floor": 1e-06
+        }
+      },
+      "tabular": [
+        {
+          "model": "linear_regression",
+          "features": [
+            "length_cm",
+            "cephalothorax_cm"
+          ],
+          "information_advantage": "GROUND-TRUTH manual length_cm + cephalothorax_cm",
+          "n_train": 95,
+          "n_test": 30,
+          "weight": {
+            "mae": 2.3930385398801466,
+            "rmse": 2.7694280639869744,
+            "mape": 12.70866685799967,
+            "r2": 0.9304488676367478,
+            "medae": 2.237019466944851,
+            "pearson_r": 0.9681442639592525,
+            "spearman_r": 0.8949855022417462,
+            "n": 30,
+            "unit": "g",
+            "n_mape_excluded": 0,
+            "mape_floor": 0.5
+          }
+        },
+        {
+          "model": "random_forest",
+          "features": [
+            "length_cm",
+            "cephalothorax_cm"
+          ],
+          "information_advantage": "GROUND-TRUTH manual length_cm + cephalothorax_cm",
+          "n_train": 95,
+          "n_test": 30,
+          "weight": {
+            "mae": 2.1488815733649087,
+            "rmse": 2.7778918678244784,
+            "mape": 9.594802659509075,
+            "r2": 0.9300230998199664,
+            "medae": 1.4352605820105806,
+            "pearson_r": 0.9649388726791542,
+            "spearman_r": 0.8805231622523925,
+            "n": 30,
+            "unit": "g",
+            "n_mape_excluded": 0,
+            "mape_floor": 0.5
+          },
+          "feature_importances": [
+            0.9741,
+            0.0259
+          ]
+        },
+        {
+          "model": "gradient_boosting",
+          "features": [
+            "length_cm",
+            "cephalothorax_cm"
+          ],
+          "information_advantage": "GROUND-TRUTH manual length_cm + cephalothorax_cm",
+          "n_train": 95,
+          "n_test": 30,
+          "weight": {
+            "mae": 2.014154614955223,
+            "rmse": 2.5564109920401656,
+            "mape": 9.146053813372982,
+            "r2": 0.9407367615304061,
+            "medae": 1.5,
+            "pearson_r": 0.9707355846082405,
+            "spearman_r": 0.9128881857968456,
+            "n": 30,
+            "unit": "g",
+            "n_mape_excluded": 0,
+            "mape_floor": 0.5
+          },
+          "feature_importances": [
+            0.9755,
+            0.0245
+          ]
+        }
+      ]
+    },
+    "3": {
+      "held_out_db": [
+        "DB1",
+        "DB2",
+        "DB3",
+        "DB4",
+        "DB5"
+      ],
+      "n_train_individuals": 109,
+      "n_test_individuals": 34,
+      "mean": {
+        "model": "mean_baseline",
+        "information_advantage": "none (constant prediction)",
+        "train_mean_weight_g": 25.912844036697248,
+        "weight": {
+          "mae": 9.667566109012412,
+          "rmse": 11.533406643351436,
+          "mape": 142.09590323108813,
+          "r2": -0.03800800549374839,
+          "medae": 8.0,
+          "pearson_r": NaN,
+          "spearman_r": NaN,
+          "n": 34,
+          "unit": "g",
+          "n_mape_excluded": 0,
+          "mape_floor": 0.5
+        },
+        "length": {
+          "mae": 1.4773826227738807,
+          "rmse": 1.9799324641559148,
+          "mape": 19.063999671794864,
+          "r2": -0.07334823490337739,
+          "medae": 0.8818348623853236,
+          "pearson_r": NaN,
+          "spearman_r": NaN,
+          "n": 34,
+          "unit": "cm",
+          "n_mape_excluded": 0,
+          "mape_floor": 0.1
+        }
+      },
+      "allometric": {
+        "model": "allometric_W_eq_a_L_pow_b",
+        "information_advantage": "GROUND-TRUTH manual length (not available to image-only models)",
+        "a": 0.007581169751067182,
+        "b": 3.396313099480559,
+        "fit_r2_log_space": 0.9361263513327307,
+        "n_train": 109,
+        "n_test": 34,
+        "weight": {
+          "mae": 2.723540926552831,
+          "rmse": 3.6708853740052763,
+          "mape": 11.202384611859063,
+          "r2": 0.8948456747669553,
+          "medae": 1.9728489537056761,
+          "pearson_r": 0.949548317717447,
+          "spearman_r": 0.8450797101320143,
+          "n": 34,
+          "unit": "g",
+          "n_mape_excluded": 0,
+          "mape_floor": 0.5
+        },
+        "weight_log_space": {
+          "mae": 0.11395676472619488,
+          "rmse": 0.13970763799351926,
+          "mape": 3.71187415966208,
+          "r2": 0.9673945982355912,
+          "medae": 0.08159685215453738,
+          "pearson_r": 0.9847018715559256,
+          "spearman_r": 0.8450797101320143,
+          "n": 34,
+          "unit": "log_g",
+          "n_mape_excluded": 1,
+          "mape_floor": 1e-06
+        }
+      },
+      "tabular": [
+        {
+          "model": "linear_regression",
+          "features": [
+            "length_cm",
+            "cephalothorax_cm"
+          ],
+          "information_advantage": "GROUND-TRUTH manual length_cm + cephalothorax_cm",
+          "n_train": 95,
+          "n_test": 30,
+          "weight": {
+            "mae": 2.621216540302909,
+            "rmse": 4.151702400538975,
+            "mape": 68.19266669466221,
+            "r2": 0.8745960555812505,
+            "medae": 2.3919290409254117,
+            "pearson_r": 0.951942005136529,
+            "spearman_r": 0.881075854878862,
+            "n": 30,
+            "unit": "g",
+            "n_mape_excluded": 0,
+            "mape_floor": 0.5
+          }
+        },
+        {
+          "model": "random_forest",
+          "features": [
+            "length_cm",
+            "cephalothorax_cm"
+          ],
+          "information_advantage": "GROUND-TRUTH manual length_cm + cephalothorax_cm",
+          "n_train": 95,
+          "n_test": 30,
+          "weight": {
+            "mae": 1.8964530415572105,
+            "rmse": 2.6742092496662053,
+            "mape": 26.77285260209078,
+            "r2": 0.9479705134846063,
+            "medae": 1.2402248677248755,
+            "pearson_r": 0.9760372701816713,
+            "spearman_r": 0.9172809388608224,
+            "n": 30,
+            "unit": "g",
+            "n_mape_excluded": 0,
+            "mape_floor": 0.5
+          },
+          "feature_importances": [
+            0.9835,
+            0.0165
+          ]
+        },
+        {
+          "model": "gradient_boosting",
+          "features": [
+            "length_cm",
+            "cephalothorax_cm"
+          ],
+          "information_advantage": "GROUND-TRUTH manual length_cm + cephalothorax_cm",
+          "n_train": 95,
+          "n_test": 30,
+          "weight": {
+            "mae": 1.9865688361081542,
+            "rmse": 2.705354150983456,
+            "mape": 25.244261968114422,
+            "r2": 0.9467515442183028,
+            "medae": 1.1279621436677072,
+            "pearson_r": 0.9738379817385194,
+            "spearman_r": 0.884826439542341,
+            "n": 30,
+            "unit": "g",
+            "n_mape_excluded": 0,
+            "mape_floor": 0.5
+          },
+          "feature_importances": [
+            0.9787,
+            0.0213
+          ]
+        }
+      ]
+    },
+    "4": {
+      "held_out_db": [
+        "DB1",
+        "DB2",
+        "DB3",
+        "DB4",
+        "DB5"
+      ],
+      "n_train_individuals": 109,
+      "n_test_individuals": 34,
+      "mean": {
+        "model": "mean_baseline",
+        "information_advantage": "none (constant prediction)",
+        "train_mean_weight_g": 25.53669724770642,
+        "weight": {
+          "mae": 8.18861305990286,
+          "rmse": 9.989680196206175,
+          "mape": 66.47810307043967,
+          "r2": -0.0004555520243847422,
+          "medae": 6.463302752293579,
+          "pearson_r": NaN,
+          "spearman_r": NaN,
+          "n": 34,
+          "unit": "g",
+          "n_mape_excluded": 0,
+          "mape_floor": 0.5
+        },
+        "length": {
+          "mae": 1.2377307069616843,
+          "rmse": 1.5136768746907565,
+          "mape": 13.084445578640311,
+          "r2": -9.944496577984907e-06,
+          "medae": 0.9833027522935787,
+          "pearson_r": NaN,
+          "spearman_r": NaN,
+          "n": 34,
+          "unit": "cm",
+          "n_mape_excluded": 0,
+          "mape_floor": 0.1
+        }
+      },
+      "allometric": {
+        "model": "allometric_W_eq_a_L_pow_b",
+        "information_advantage": "GROUND-TRUTH manual length (not available to image-only models)",
+        "a": 0.008283741969494437,
+        "b": 3.360586477009875,
+        "fit_r2_log_space": 0.9551334158059536,
+        "n_train": 109,
+        "n_test": 34,
+        "weight": {
+          "mae": 2.504583045587107,
+          "rmse": 3.3466112699307486,
+          "mape": 11.364110814128646,
+          "r2": 0.8877192857211165,
+          "medae": 1.6099895340970551,
+          "pearson_r": 0.9427685921680722,
+          "spearman_r": 0.7664595867140155,
+          "n": 34,
+          "unit": "g",
+          "n_mape_excluded": 0,
+          "mape_floor": 0.5
+        },
+        "weight_log_space": {
+          "mae": 0.10781590457326642,
+          "rmse": 0.14716661829832436,
+          "mape": 3.9474451274439706,
+          "r2": 0.9369580512596345,
+          "medae": 0.07713852235138419,
+          "pearson_r": 0.970852820660832,
+          "spearman_r": 0.7664595867140155,
+          "n": 34,
+          "unit": "log_g",
+          "n_mape_excluded": 0,
+          "mape_floor": 1e-06
+        }
+      },
+      "tabular": [
+        {
+          "model": "linear_regression",
+          "features": [
+            "length_cm",
+            "cephalothorax_cm"
+          ],
+          "information_advantage": "GROUND-TRUTH manual length_cm + cephalothorax_cm",
+          "n_train": 95,
+          "n_test": 30,
+          "weight": {
+            "mae": 2.236972861458194,
+            "rmse": 2.740764071759747,
+            "mape": 11.926881730517657,
+            "r2": 0.9328798605362758,
+            "medae": 2.1434822775877365,
+            "pearson_r": 0.9676915252613081,
+            "spearman_r": 0.7343567608234444,
+            "n": 30,
+            "unit": "g",
+            "n_mape_excluded": 0,
+            "mape_floor": 0.5
+          }
+        },
+        {
+          "model": "random_forest",
+          "features": [
+            "length_cm",
+            "cephalothorax_cm"
+          ],
+          "information_advantage": "GROUND-TRUTH manual length_cm + cephalothorax_cm",
+          "n_train": 95,
+          "n_test": 30,
+          "weight": {
+            "mae": 1.9347850749559072,
+            "rmse": 2.666794983409268,
+            "mape": 8.93461856855473,
+            "r2": 0.9364539143085744,
+            "medae": 1.0514391534391478,
+            "pearson_r": 0.970451083780418,
+            "spearman_r": 0.7274630915485365,
+            "n": 30,
+            "unit": "g",
+            "n_mape_excluded": 0,
+            "mape_floor": 0.5
+          },
+          "feature_importances": [
+            0.9733,
+            0.0267
+          ]
+        },
+        {
+          "model": "gradient_boosting",
+          "features": [
+            "length_cm",
+            "cephalothorax_cm"
+          ],
+          "information_advantage": "GROUND-TRUTH manual length_cm + cephalothorax_cm",
+          "n_train": 95,
+          "n_test": 30,
+          "weight": {
+            "mae": 2.028697267639864,
+            "rmse": 2.78142106033409,
+            "mape": 9.075712628578831,
+            "r2": 0.9308737460448054,
+            "medae": 1.3859704213925452,
+            "pearson_r": 0.9674339422028908,
+            "spearman_r": 0.7215017787813975,
+            "n": 30,
+            "unit": "g",
+            "n_mape_excluded": 0,
+            "mape_floor": 0.5
+          },
+          "feature_importances": [
+            0.973,
+            0.027
+          ]
+        }
+      ]
+    }
+  },
+  "n_individuals": 170
+}

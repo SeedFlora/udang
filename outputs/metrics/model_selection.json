@@ -1,0 +1,141 @@
+{
+  "criterion": "mean best_val_metric across folds, recorded at checkpoint time from the validation split. No test metric was consulted.",
+  "selected": {
+    "disease_single": "E1_disease_single_tiger",
+    "disease_pooled": "E2_pooled_bce_withaug",
+    "biomass_single_image": "E4_biomass_single_image",
+    "biomass_multiview": "E5_biomass_multiview_mean",
+    "multitask": "E6_multitask_uncertainty",
+    "lightweight": "E9_E8_lightweight_disease"
+  },
+  "detail": {
+    "disease_single": {
+      "description": "best single-dataset disease model",
+      "selected": "E1_disease_single_tiger",
+      "val_metric_mean": 0.9234888592216072,
+      "n_folds": 3,
+      "ranking": [
+        {
+          "config": "E1_disease_single_tiger",
+          "val_metric_mean": 0.9234888592216072,
+          "n_folds": 3
+        },
+        {
+          "config": "E1_disease_single_sdibd",
+          "val_metric_mean": 0.8571734698561874,
+          "n_folds": 3
+        }
+      ]
+    },
+    "disease_pooled": {
+      "description": "best pooled hierarchical disease model",
+      "selected": "E2_pooled_bce_withaug",
+      "val_metric_mean": 0.9170177969049184,
+      "n_folds": 2,
+      "ranking": [
+        {
+          "config": "E2_pooled_bce_withaug",
+          "val_metric_mean": 0.9170177969049184,
+          "n_folds": 2
+        },
+        {
+          "config": "E2_pooled_bce_balanced",
+          "val_metric_mean": 0.9001193010136435,
+          "n_folds": 2
+        },
+        {
+          "config": "E2_pooled_bce_ordinary",
+          "val_metric_mean": 0.8542370789238413,
+          "n_folds": 3
+        },
+        {
+          "config": "E2_pooled_focal_ordinary",
+          "val_metric_mean": 0.8486025579295708,
+          "n_folds": 2
+        },
+        {
+          "config": "E2_pooled_asl_ordinary",
+          "val_metric_mean": 0.8407764294712188,
+          "n_folds": 2
+        },
+        {
+          "config": "E2_pooled_bce_strongcolor",
+          "val_metric_mean": 0.8325321855616656,
+          "n_folds": 2
+        }
+      ]
+    },
+    "biomass_single_image": {
+      "description": "best single-image biomass model",
+      "selected": "E4_biomass_single_image",
+      "val_metric_mean": 0.29106460610848295,
+      "n_folds": 3,
+      "ranking": [
+        {
+          "config": "E4_biomass_single_image",
+          "val_metric_mean": 0.29106460610848295,
+          "n_folds": 3
+        }
+      ]
+    },
+    "biomass_multiview": {
+      "description": "best multi-view biomass model",
+      "selected": "E5_biomass_multiview_mean",
+      "val_metric_mean": 0.2856032280451851,
+      "n_folds": 2,
+      "ranking": [
+        {
+          "config": "E5_biomass_multiview_mean",
+          "val_metric_mean": 0.2856032280451851,
+          "n_folds": 2
+        },
+        {
+          "config": "E5_biomass_multiview_attention",
+          "val_metric_mean": 0.26734403322282907,
+          "n_folds": 2
+        }
+      ]
+    },
+    "multitask": {
+      "description": "best shared-encoder multi-task model",
+      "selected": "E6_multitask_uncertainty",
+      "val_metric_mean": 0.5918531084458327,
+      "n_folds": 2,
+      "ranking": [
+        {
+          "config": "E6_multitask_uncertainty",
+          "val_metric_mean": 0.5918531084458327,
+          "n_folds": 2
+        },
+        {
+          "config": "E6_multitask_fixed",
+          "val_metric_mean": 0.5120638268772049,
+          "n_folds": 2
+        }
+      ]
+    },
+    "lightweight": {
+      "description": "best lightweight model",
+      "selected": "E9_E8_lightweight_disease",
+      "val_metric_mean": 0.9554881024492086,
+      "n_folds": 6,
+      "ranking": [
+        {
+          "config": "E9_E8_lightweight_disease",
+          "val_metric_mean": 0.9554881024492086,
+          "n_folds": 6
+        },
+        {
+          "config": "E8_lightweight_disease",
+          "val_metric_mean": 0.9542817300730595,
+          "n_folds": 2
+        },
+        {
+          "config": "E8_lightweight_biomass",
+          "val_metric_mean": 0.2750101472862531,
+          "n_folds": 2
+        }
+      ]
+    }
+  }
+}

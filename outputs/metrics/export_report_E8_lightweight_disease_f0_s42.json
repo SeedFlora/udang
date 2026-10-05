@@ -1,0 +1,48 @@
+{
+  "checkpoint": "outputs/checkpoints/E8_lightweight_disease_f0_s42_best.pt",
+  "backbone": "mobilenetv3_large",
+  "image_size": 320,
+  "n_verification_samples": 64,
+  "output_layout": "[health_logit(1) | attr_logits(3) | biomass(3)]",
+  "parameters": {
+    "total_params": 5187639,
+    "trainable_params": 5187639,
+    "size_mb_fp32": 20.75
+  },
+  "torchscript": {
+    "path": "outputs/checkpoints/export/E8_lightweight_disease_f0_s42_torchscript.pt",
+    "file_size_mb": 20.753,
+    "max_abs_diff": 1.621246337890625e-05,
+    "mean_abs_diff": 2.174224619011511e-06,
+    "allclose_atol_1e-4": true
+  },
+  "onnx": {
+    "path": "outputs/checkpoints/export/E8_lightweight_disease_f0_s42.onnx",
+    "file_size_mb": 0.421,
+    "max_abs_diff": 2.002716064453125e-05,
+    "mean_abs_diff": 2.033135388046503e-06,
+    "allclose_atol_1e-4": true,
+    "opset": 17
+  },
+  "latency": {
+    "pytorch_cpu": {
+      "latency_ms_per_batch": 320.417,
+      "latency_ms_per_image": 20.026,
+      "batch_size": 16,
+      "throughput_img_per_s": 49.9
+    },
+    "onnxruntime_cpu": {
+      "latency_ms_per_batch": 61.748,
+      "latency_ms_per_image": 3.859,
+      "batch_size": 16,
+      "throughput_img_per_s": 259.1
+    },
+    "pytorch_gpu": {
+      "latency_ms_per_batch": 11.874,
+      "latency_ms_per_image": 0.742,
+      "batch_size": 16,
+      "throughput_img_per_s": 1347.5
+    }
+  },
+  "gpu_name": "NVIDIA GeForce RTX 3070 Ti Laptop GPU"
+}

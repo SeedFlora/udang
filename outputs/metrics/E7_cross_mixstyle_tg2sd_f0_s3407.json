@@ -1,0 +1,138 @@
+{
+  "run_name": "E7_cross_mixstyle_tg2sd_f0_s3407",
+  "fold": 0,
+  "seed": 3407,
+  "experiment": "E7",
+  "config_name": "E7_cross_mixstyle_tg2sd",
+  "disease": {
+    "health": {
+      "accuracy": 0.43379978471474706,
+      "balanced_accuracy": 0.49738887997811093,
+      "precision": 0.5,
+      "recall": 0.017110266159695818,
+      "f1": 0.03308823529411765,
+      "auroc": 0.2962571587617583,
+      "average_precision": 0.4661930276499888,
+      "brier": 0.5510994151797829,
+      "ece": 0.5486593132207024,
+      "tn": 394,
+      "fp": 9,
+      "fn": 517,
+      "tp": 9,
+      "n": 929
+    },
+    "attributes": {
+      "black_gill": {
+        "precision": 0.125,
+        "recall": 0.005050505050505051,
+        "f1": 0.00970873786407767,
+        "average_precision": 0.24034277088504544,
+        "auroc": 0.5567991819701806,
+        "support_pos": 198,
+        "support_supervised": 929,
+        "brier": 0.21194218584913457,
+        "ece": 0.2123430624747246
+      },
+      "wssv": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "average_precision": 0.256899432960463,
+        "auroc": 0.24184793636621893,
+        "support_pos": 328,
+        "support_supervised": 929,
+        "brier": 0.3509828352788304,
+        "ece": 0.35248302328484643
+      },
+      "yellow_head": {
+        "precision": NaN,
+        "recall": NaN,
+        "f1": NaN,
+        "average_precision": NaN,
+        "auroc": NaN,
+        "support_pos": 0,
+        "support_supervised": 0,
+        "brier": NaN,
+        "ece": NaN
+      },
+      "macro_f1": 0.004854368932038835,
+      "micro_f1": 0.0037453183520599256,
+      "macro_map": 0.24862110192275422,
+      "hamming_loss": 0.28632938643702904,
+      "exact_match_ratio": NaN,
+      "n_rows": 929,
+      "n_supervised": 1858,
+      "n_rows_fully_supervised": 0
+    },
+    "n": 929,
+    "by_source": {
+      "ShrimpDiseaseImageBD": {
+        "n": 929,
+        "health": {
+          "accuracy": 0.43379978471474706,
+          "balanced_accuracy": 0.49738887997811093,
+          "precision": 0.5,
+          "recall": 0.017110266159695818,
+          "f1": 0.03308823529411765,
+          "auroc": 0.2962571587617583,
+          "average_precision": 0.4661930276499888,
+          "brier": 0.5510994151797829,
+          "ece": 0.5486593132207024,
+          "tn": 394,
+          "fp": 9,
+          "fn": 517,
+          "tp": 9,
+          "n": 929
+        },
+        "attributes": {
+          "black_gill": {
+            "precision": 0.125,
+            "recall": 0.005050505050505051,
+            "f1": 0.00970873786407767,
+            "average_precision": 0.24034277088504544,
+            "auroc": 0.5567991819701806,
+            "support_pos": 198,
+            "support_supervised": 929,
+            "brier": 0.21194218584913457,
+            "ece": 0.2123430624747246
+          },
+          "wssv": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "average_precision": 0.256899432960463,
+            "auroc": 0.24184793636621893,
+            "support_pos": 328,
+            "support_supervised": 929,
+            "brier": 0.3509828352788304,
+            "ece": 0.35248302328484643
+          },
+          "yellow_head": {
+            "precision": NaN,
+            "recall": NaN,
+            "f1": NaN,
+            "average_precision": NaN,
+            "auroc": NaN,
+            "support_pos": 0,
+            "support_supervised": 0,
+            "brier": NaN,
+            "ece": NaN
+          },
+          "macro_f1": 0.004854368932038835,
+          "micro_f1": 0.0037453183520599256,
+          "macro_map": 0.24862110192275422,
+          "hamming_loss": 0.28632938643702904,
+          "exact_match_ratio": NaN,
+          "n_rows": 929,
+          "n_supervised": 1858,
+          "n_rows_fully_supervised": 0
+        }
+      }
+    }
+  },
+  "thresholds": [
+    0.14,
+    0.9,
+    0.08
+  ]
+}

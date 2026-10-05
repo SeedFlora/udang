@@ -1,0 +1,166 @@
+# ShrimpVision-MTL :: dataset source registry
+#
+# Every value under `verify:` is a CONTRACT that scripts/download_data.py asserts
+# against the live Mendeley API before any label is assigned. If a contract fails
+# the acquisition aborts (fail-closed) rather than silently mislabelling data.
+#
+# Provenance of the TigerShrimpBD folder -> class mapping:
+#   The Mendeley dataset description publishes the class distribution verbatim:
+#     "The four categories contain 978 images of WSSV, 896 images of Yellow Head,
+#      854 images of Black Gill, and 846 images of Healthy shrimp."
+#   Those four counts are mutually distinct and each matches exactly one augmented
+#   folder's file count, so the mapping is uniquely determined, not guessed.
+#   The originals folders are paired to their augmented folder by identical base
+#   filenames; download_data.py re-verifies that pairing over all 1001 originals.
+
+api_base: https://data.mendeley.com/public-api/datasets
+
+datasets:
+
+  shrimp_disease_image_bd:
+    name: ShrimpDiseaseImageBD
+    long_name: >-
+      ShrimpDiseaseImageBD: An Image Dataset for Computer Vision-Based Detection
+      of Shrimp Diseases in Bangladesh
+    mendeley_id: jhrtdj9txm
+    requested_doi: 10.17632/jhrtdj9txm.3
+    requested_version: 3
+    task: disease
+    layout: archives
+    raw_subdir: shrimp_disease_image_bd
+    verify:
+      version: 3
+      n_files: 4
+      total_size_bytes: 494151896
+      filenames:
+        - "Annotated Diseased Shrimp Images.zip"
+        - "Raw Images.zip"
+        - "Readme.docx"
+        - "ShrimpDiseaseBD_Summary.xlsx"
+    extract:
+      - "Raw Images.zip"
+      - "Annotated Diseased Shrimp Images.zip"
+    # Expected raw-image class counts, per the published description. Verified in
+    # the audit (E0) against the extracted tree, NOT trusted blindly.
+    expected_raw_class_counts:
+      Healthy: 403
+      BG: 198
+      WSSV: 328
+      BG_WSSV: 220
+    expected_raw_total: 1149
+
+  tiger_shrimp_bd:
+    name: TigerShrimpBD
+    long_name: "TigerShrimpBD: A Tiger Shrimp Image Dataset"
+    mendeley_id: 9dj4sk5d55
+    requested_doi: 10.17632/9dj4sk5d55.1
+    requested_version: 1
+    task: disease
+    layout: loose_files
+    raw_subdir: tiger_shrimp_bd
+    verify:
+      version: 1
+      n_files: 4575
+      total_size_bytes: 209541065
+    # folder_id -> (class, role). Contract: each folder's live file count must
+    # equal expect_n or acquisition aborts.
+    folders:
+      - folder_id: 06f9a37d-d9eb-437f-8e9b-8b5c9564e4f7
+        class: wssv
+        role: augmented
+        expect_n: 978
+      - folder_id: ec9dc924-a7e1-407d-a0ab-4b5fc2a6d00c
+        class: wssv
+        role: original
+        expect_n: 489
+      - folder_id: 24f70fca-aeda-4f16-a815-37ab2b68b9fa
+        class: yellow_head
+        role: augmented
+        expect_n: 896
+      - folder_id: f80129a2-fcb9-4509-926a-f2eb1be900aa
+        class: yellow_head
+        role: original
+        expect_n: 50
+      - folder_id: bfb3e516-9a1a-4b19-b362-fb5f2d9631f7
+        class: black_gill
+        role: augmented
+        expect_n: 854
+      - folder_id: 26ca29a9-96c7-46bd-983d-bcf23b33bb8b
+        class: black_gill
+        role: original
+        expect_n: 39
+      - folder_id: f2b2787a-77df-458d-ac22-d438a2ae028d
+        class: healthy
+        role: augmented
+        expect_n: 846
+      - folder_id: 5d6468d6-f4ca-438e-90c7-d9c49cfe8a89
+        class: healthy
+        role: original
+        expect_n: 423
+    expected_original_total: 1001
+    expected_augmented_total: 3574
+
+  biomass_vannamei:
+    name: BiomassVannamei
+    long_name: >-
+      A Litopenaeus vannamei shrimp dataset with images and corresponding
+      weight-size measurements for the development of artificial
+      intelligence-based biomass estimation and organism detection algorithms
+    mendeley_id: h8tcn6ykky
+    # VERSION CONFLICT -- see reports/DATASET_AUDIT.md and LICENSE_NOTES.md.
+    # The task specification cites DOI 10.17632/h8tcn6ykky.1 (version 1).
+    # The Mendeley public API serves a file listing only for the current version
+    # (2); querying ?version=1 returns an empty file list (size 0), so v1 is not
+    # retrievable programmatically. Version 2 is used and the substitution is
+    # recorded explicitly -- it is NOT a silent dataset replacement: same dataset,
+    # same DOI stem, later version.
+    requested_doi: 10.17632/h8tcn6ykky.1
+    requested_version: 1
+    resolved_doi: 10.17632/h8tcn6ykky.2
+    resolved_version: 2
+    version_conflict: true
+    version_conflict_reason: >-
+      Mendeley public API returns zero files for ?version=1; only the current
+      version (2) exposes a downloadable file listing.
+    task: biomass
+    layout: archives
+    raw_subdir: biomass_vannamei
+    verify:
+      version: 2
+      n_files: 1
+      total_size_bytes: 1465185448
+      filenames:
+        - "DATASET.zip"
+    extract:
+      - "DATASET.zip"
+    expected_db_image_counts:
+      DB1: 490
+      DB2: 2002
+      DB3: 1719
+      DB4: 635
+      DB5: 661
+    expected_db_individual_counts:
+      DB1: 22
+      DB2: 58
+      DB3: 50
+      DB4: 20
+      DB5: 20
+    expected_total_images: 5507
+    expected_total_individuals: 170
+    expected_spreadsheets:
+      - DB1_INDUSTRIAL_FARM_1
+      - DB2_INDUSTRIAL_FARM_2_C1
+      - DB3_INDUSTRIAL_FARM_2_C2
+      - DB4_ACADEMIC_POND_S1
+      - DB5_ACADEMIC_POND_S2
+
+# Licence statements are captured live from the API at acquisition time and
+# written to data/manifests/acquisition_record.json. Known conflicts:
+licence_conflicts:
+  shrimp_disease_image_bd:
+    mendeley_declared: CC BY 4.0
+    description_claim: "The dataset is released to the public domain"
+    resolution: >-
+      Conflict between a CC BY 4.0 licence field and a prose "public domain"
+      claim. The more restrictive interpretation (CC BY 4.0, attribution
+      required) is adopted per project policy.

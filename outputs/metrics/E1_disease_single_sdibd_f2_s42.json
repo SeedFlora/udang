@@ -1,0 +1,138 @@
+{
+  "run_name": "E1_disease_single_sdibd_f2_s42",
+  "fold": 2,
+  "seed": 42,
+  "experiment": "E1",
+  "config_name": "E1_disease_single_sdibd",
+  "disease": {
+    "health": {
+      "accuracy": 0.8777292576419214,
+      "balanced_accuracy": 0.8510486577181208,
+      "precision": 0.8805031446540881,
+      "recall": 0.9395973154362416,
+      "f1": 0.9090909090909091,
+      "auroc": 0.9574664429530202,
+      "average_precision": 0.9776262858523446,
+      "brier": 0.0952671530165811,
+      "ece": 0.08962074590986188,
+      "tn": 61,
+      "fp": 19,
+      "fn": 9,
+      "tp": 140,
+      "n": 229
+    },
+    "attributes": {
+      "black_gill": {
+        "precision": 0.6956521739130435,
+        "recall": 0.7619047619047619,
+        "f1": 0.7272727272727272,
+        "average_precision": 0.7933652121213807,
+        "auroc": 0.8654351395730706,
+        "support_pos": 84,
+        "support_supervised": 229,
+        "brier": 0.1489622267521751,
+        "ece": 0.12084250366869362
+      },
+      "wssv": {
+        "precision": 0.8571428571428571,
+        "recall": 0.9357798165137615,
+        "f1": 0.894736842105263,
+        "average_precision": 0.9542565008425054,
+        "auroc": 0.9638379204892966,
+        "support_pos": 109,
+        "support_supervised": 229,
+        "brier": 0.0826212710152998,
+        "ece": 0.07637171640607841
+      },
+      "yellow_head": {
+        "precision": NaN,
+        "recall": NaN,
+        "f1": NaN,
+        "average_precision": NaN,
+        "auroc": NaN,
+        "support_pos": 0,
+        "support_supervised": 0,
+        "brier": NaN,
+        "ece": NaN
+      },
+      "macro_f1": 0.8110047846889952,
+      "micro_f1": 0.8217821782178218,
+      "macro_map": 0.873810856481943,
+      "hamming_loss": 0.1572052401746725,
+      "exact_match_ratio": NaN,
+      "n_rows": 229,
+      "n_supervised": 458,
+      "n_rows_fully_supervised": 0
+    },
+    "n": 229,
+    "by_source": {
+      "ShrimpDiseaseImageBD": {
+        "n": 229,
+        "health": {
+          "accuracy": 0.8777292576419214,
+          "balanced_accuracy": 0.8510486577181208,
+          "precision": 0.8805031446540881,
+          "recall": 0.9395973154362416,
+          "f1": 0.9090909090909091,
+          "auroc": 0.9574664429530202,
+          "average_precision": 0.9776262858523446,
+          "brier": 0.0952671530165811,
+          "ece": 0.08962074590986188,
+          "tn": 61,
+          "fp": 19,
+          "fn": 9,
+          "tp": 140,
+          "n": 229
+        },
+        "attributes": {
+          "black_gill": {
+            "precision": 0.6956521739130435,
+            "recall": 0.7619047619047619,
+            "f1": 0.7272727272727272,
+            "average_precision": 0.7933652121213807,
+            "auroc": 0.8654351395730706,
+            "support_pos": 84,
+            "support_supervised": 229,
+            "brier": 0.1489622267521751,
+            "ece": 0.12084250366869362
+          },
+          "wssv": {
+            "precision": 0.8571428571428571,
+            "recall": 0.9357798165137615,
+            "f1": 0.894736842105263,
+            "average_precision": 0.9542565008425054,
+            "auroc": 0.9638379204892966,
+            "support_pos": 109,
+            "support_supervised": 229,
+            "brier": 0.0826212710152998,
+            "ece": 0.07637171640607841
+          },
+          "yellow_head": {
+            "precision": NaN,
+            "recall": NaN,
+            "f1": NaN,
+            "average_precision": NaN,
+            "auroc": NaN,
+            "support_pos": 0,
+            "support_supervised": 0,
+            "brier": NaN,
+            "ece": NaN
+          },
+          "macro_f1": 0.8110047846889952,
+          "micro_f1": 0.8217821782178218,
+          "macro_map": 0.873810856481943,
+          "hamming_loss": 0.1572052401746725,
+          "exact_match_ratio": NaN,
+          "n_rows": 229,
+          "n_supervised": 458,
+          "n_rows_fully_supervised": 0
+        }
+      }
+    }
+  },
+  "thresholds": [
+    0.46,
+    0.23,
+    0.5
+  ]
+}

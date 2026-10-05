@@ -1,0 +1,138 @@
+{
+  "run_name": "E1_disease_single_tiger_f0_s2026",
+  "fold": 0,
+  "seed": 2026,
+  "experiment": "E1",
+  "config_name": "E1_disease_single_tiger",
+  "disease": {
+    "health": {
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "auroc": 1.0,
+      "average_precision": 0.9999999999999999,
+      "brier": 4.5017758500616935e-08,
+      "ece": 0.0001593279935332248,
+      "tn": 85,
+      "fp": 0,
+      "fn": 0,
+      "tp": 115,
+      "n": 200
+    },
+    "attributes": {
+      "black_gill": {
+        "precision": 0.6,
+        "recall": 0.375,
+        "f1": 0.4615384615384615,
+        "average_precision": 0.5495033240568955,
+        "auroc": 0.8873697916666667,
+        "support_pos": 8,
+        "support_supervised": 200,
+        "brier": 0.02956136509957679,
+        "ece": 0.02575862973905714
+      },
+      "wssv": {
+        "precision": 0.97,
+        "recall": 1.0,
+        "f1": 0.9847715736040609,
+        "average_precision": 0.9745915599637237,
+        "auroc": 0.9867881092983686,
+        "support_pos": 97,
+        "support_supervised": 200,
+        "brier": 0.014633683796200449,
+        "ece": 0.011110062544830726
+      },
+      "yellow_head": {
+        "precision": 0.7142857142857143,
+        "recall": 1.0,
+        "f1": 0.8333333333333333,
+        "average_precision": 0.9086435786435787,
+        "auroc": 0.9952631578947368,
+        "support_pos": 10,
+        "support_supervised": 200,
+        "brier": 0.0140681616893223,
+        "ece": 0.016553188336292806
+      },
+      "macro_f1": 0.7598811228252852,
+      "micro_f1": 0.9401709401709402,
+      "macro_map": 0.810912820888066,
+      "hamming_loss": 0.023333333333333334,
+      "exact_match_ratio": 0.955,
+      "n_rows": 200,
+      "n_supervised": 600,
+      "n_rows_fully_supervised": 200
+    },
+    "n": 200,
+    "by_source": {
+      "TigerShrimpBD": {
+        "n": 200,
+        "health": {
+          "accuracy": 1.0,
+          "balanced_accuracy": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auroc": 1.0,
+          "average_precision": 0.9999999999999999,
+          "brier": 4.5017758500616935e-08,
+          "ece": 0.0001593279935332248,
+          "tn": 85,
+          "fp": 0,
+          "fn": 0,
+          "tp": 115,
+          "n": 200
+        },
+        "attributes": {
+          "black_gill": {
+            "precision": 0.6,
+            "recall": 0.375,
+            "f1": 0.4615384615384615,
+            "average_precision": 0.5495033240568955,
+            "auroc": 0.8873697916666667,
+            "support_pos": 8,
+            "support_supervised": 200,
+            "brier": 0.02956136509957679,
+            "ece": 0.02575862973905714
+          },
+          "wssv": {
+            "precision": 0.97,
+            "recall": 1.0,
+            "f1": 0.9847715736040609,
+            "average_precision": 0.9745915599637237,
+            "auroc": 0.9867881092983686,
+            "support_pos": 97,
+            "support_supervised": 200,
+            "brier": 0.014633683796200449,
+            "ece": 0.011110062544830726
+          },
+          "yellow_head": {
+            "precision": 0.7142857142857143,
+            "recall": 1.0,
+            "f1": 0.8333333333333333,
+            "average_precision": 0.9086435786435787,
+            "auroc": 0.9952631578947368,
+            "support_pos": 10,
+            "support_supervised": 200,
+            "brier": 0.0140681616893223,
+            "ece": 0.016553188336292806
+          },
+          "macro_f1": 0.7598811228252852,
+          "micro_f1": 0.9401709401709402,
+          "macro_map": 0.810912820888066,
+          "hamming_loss": 0.023333333333333334,
+          "exact_match_ratio": 0.955,
+          "n_rows": 200,
+          "n_supervised": 600,
+          "n_rows_fully_supervised": 200
+        }
+      }
+    }
+  },
+  "thresholds": [
+    0.09999999999999999,
+    0.89,
+    0.4
+  ]
+}

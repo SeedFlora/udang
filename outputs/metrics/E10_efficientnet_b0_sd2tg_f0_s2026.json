@@ -1,0 +1,138 @@
+{
+  "run_name": "E10_efficientnet_b0_sd2tg_f0_s2026",
+  "fold": 0,
+  "seed": 2026,
+  "experiment": "E10",
+  "config_name": "E10_efficientnet_b0_sd2tg",
+  "disease": {
+    "health": {
+      "accuracy": 0.6677181913774973,
+      "balanced_accuracy": 0.6309437459703418,
+      "precision": 0.6315136476426799,
+      "recall": 0.9640151515151515,
+      "f1": 0.7631184407796103,
+      "auroc": 0.8677309441937102,
+      "average_precision": 0.8949422860898941,
+      "brier": 0.23975942885917348,
+      "ece": 0.2529049116734231,
+      "tn": 126,
+      "fp": 297,
+      "fn": 19,
+      "tp": 509,
+      "n": 951
+    },
+    "attributes": {
+      "black_gill": {
+        "precision": 0.1375,
+        "recall": 0.28205128205128205,
+        "f1": 0.18487394957983194,
+        "average_precision": 0.11828966524316901,
+        "auroc": 0.7155589293747189,
+        "support_pos": 39,
+        "support_supervised": 951,
+        "brier": 0.06133891095292716,
+        "ece": 0.06570890035152376
+      },
+      "wssv": {
+        "precision": 0.708649468892261,
+        "recall": 0.9550102249488752,
+        "f1": 0.813588850174216,
+        "average_precision": 0.9297851246215209,
+        "auroc": 0.9171779141104295,
+        "support_pos": 489,
+        "support_supervised": 951,
+        "brier": 0.1839637082963932,
+        "ece": 0.20823867341893265
+      },
+      "yellow_head": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "average_precision": NaN,
+        "auroc": NaN,
+        "support_pos": 0,
+        "support_supervised": 951,
+        "brier": 0.2232440400961768,
+        "ece": 0.46413590294454876
+      },
+      "macro_f1": 0.3328209332513493,
+      "micro_f1": 0.5952677459526774,
+      "macro_map": 0.5240373949323449,
+      "hamming_loss": 0.2278303540133193,
+      "exact_match_ratio": 0.45110410094637227,
+      "n_rows": 951,
+      "n_supervised": 2853,
+      "n_rows_fully_supervised": 951
+    },
+    "n": 951,
+    "by_source": {
+      "TigerShrimpBD": {
+        "n": 951,
+        "health": {
+          "accuracy": 0.6677181913774973,
+          "balanced_accuracy": 0.6309437459703418,
+          "precision": 0.6315136476426799,
+          "recall": 0.9640151515151515,
+          "f1": 0.7631184407796103,
+          "auroc": 0.8677309441937102,
+          "average_precision": 0.8949422860898941,
+          "brier": 0.23975942885917348,
+          "ece": 0.2529049116734231,
+          "tn": 126,
+          "fp": 297,
+          "fn": 19,
+          "tp": 509,
+          "n": 951
+        },
+        "attributes": {
+          "black_gill": {
+            "precision": 0.1375,
+            "recall": 0.28205128205128205,
+            "f1": 0.18487394957983194,
+            "average_precision": 0.11828966524316901,
+            "auroc": 0.7155589293747189,
+            "support_pos": 39,
+            "support_supervised": 951,
+            "brier": 0.06133891095292716,
+            "ece": 0.06570890035152376
+          },
+          "wssv": {
+            "precision": 0.708649468892261,
+            "recall": 0.9550102249488752,
+            "f1": 0.813588850174216,
+            "average_precision": 0.9297851246215209,
+            "auroc": 0.9171779141104295,
+            "support_pos": 489,
+            "support_supervised": 951,
+            "brier": 0.1839637082963932,
+            "ece": 0.20823867341893265
+          },
+          "yellow_head": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "average_precision": NaN,
+            "auroc": NaN,
+            "support_pos": 0,
+            "support_supervised": 951,
+            "brier": 0.2232440400961768,
+            "ece": 0.46413590294454876
+          },
+          "macro_f1": 0.3328209332513493,
+          "micro_f1": 0.5952677459526774,
+          "macro_map": 0.5240373949323449,
+          "hamming_loss": 0.2278303540133193,
+          "exact_match_ratio": 0.45110410094637227,
+          "n_rows": 951,
+          "n_supervised": 2853,
+          "n_rows_fully_supervised": 951
+        }
+      }
+    }
+  },
+  "thresholds": [
+    0.35000000000000003,
+    0.6,
+    0.5
+  ]
+}

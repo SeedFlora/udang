@@ -1,0 +1,200 @@
+{
+  "run_name": "E8_lightweight_disease_f2_s3407",
+  "fold": 2,
+  "seed": 3407,
+  "experiment": "E8",
+  "config_name": "E8_lightweight_disease",
+  "disease": {
+    "health": {
+      "accuracy": 0.972027972027972,
+      "balanced_accuracy": 0.972710538426139,
+      "precision": 0.9846743295019157,
+      "recall": 0.969811320754717,
+      "f1": 0.9771863117870724,
+      "auroc": 0.9960193281178095,
+      "average_precision": 0.9975715560290925,
+      "brier": 0.02533415449501868,
+      "ece": 0.022568149413004897,
+      "tn": 160,
+      "fp": 4,
+      "fn": 8,
+      "tp": 257,
+      "n": 429
+    },
+    "attributes": {
+      "black_gill": {
+        "precision": 0.7166666666666667,
+        "recall": 0.9347826086956522,
+        "f1": 0.8113207547169811,
+        "average_precision": 0.9326094422029585,
+        "auroc": 0.9738420848922719,
+        "support_pos": 92,
+        "support_supervised": 429,
+        "brier": 0.05880817118165702,
+        "ece": 0.0528001352651869
+      },
+      "wssv": {
+        "precision": 0.9013452914798207,
+        "recall": 0.9710144927536232,
+        "f1": 0.9348837209302326,
+        "average_precision": 0.9873487506431042,
+        "auroc": 0.9884667275971624,
+        "support_pos": 207,
+        "support_supervised": 429,
+        "brier": 0.04395549514303685,
+        "ece": 0.03741103526946077
+      },
+      "yellow_head": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "average_precision": 1.0,
+        "auroc": 1.0,
+        "support_pos": 10,
+        "support_supervised": 200,
+        "brier": 0.0022264931310666623,
+        "ece": 0.007165980553956892
+      },
+      "macro_f1": 0.9154014918824046,
+      "micro_f1": 0.8972809667673717,
+      "macro_map": 0.9733193976153544,
+      "hamming_loss": 0.06427221172022685,
+      "exact_match_ratio": 0.98,
+      "n_rows": 429,
+      "n_supervised": 1058,
+      "n_rows_fully_supervised": 200
+    },
+    "n": 429,
+    "by_source": {
+      "ShrimpDiseaseImageBD": {
+        "n": 229,
+        "health": {
+          "accuracy": 0.9475982532751092,
+          "balanced_accuracy": 0.9481543624161073,
+          "precision": 0.9724137931034482,
+          "recall": 0.9463087248322147,
+          "f1": 0.9591836734693876,
+          "auroc": 0.985486577181208,
+          "average_precision": 0.992360472036526,
+          "brier": 0.04745970258492407,
+          "ece": 0.04234653339228301,
+          "tn": 76,
+          "fp": 4,
+          "fn": 8,
+          "tp": 141,
+          "n": 229
+        },
+        "attributes": {
+          "black_gill": {
+            "precision": 0.7222222222222222,
+            "recall": 0.9285714285714286,
+            "f1": 0.8125000000000001,
+            "average_precision": 0.9368334082342333,
+            "auroc": 0.952216748768473,
+            "support_pos": 84,
+            "support_supervised": 229,
+            "brier": 0.10001408583989362,
+            "ece": 0.0919049123209026
+          },
+          "wssv": {
+            "precision": 0.8253968253968254,
+            "recall": 0.9541284403669725,
+            "f1": 0.8851063829787235,
+            "average_precision": 0.9586774545392193,
+            "auroc": 0.9640672782874617,
+            "support_pos": 109,
+            "support_supervised": 229,
+            "brier": 0.07870532167545038,
+            "ece": 0.06670545545208922
+          },
+          "yellow_head": {
+            "precision": NaN,
+            "recall": NaN,
+            "f1": NaN,
+            "average_precision": NaN,
+            "auroc": NaN,
+            "support_pos": 0,
+            "support_supervised": 0,
+            "brier": NaN,
+            "ece": NaN
+          },
+          "macro_f1": 0.8488031914893618,
+          "micro_f1": 0.8524590163934427,
+          "macro_map": 0.9477554313867262,
+          "hamming_loss": 0.13755458515283842,
+          "exact_match_ratio": NaN,
+          "n_rows": 229,
+          "n_supervised": 458,
+          "n_rows_fully_supervised": 0
+        }
+      },
+      "TigerShrimpBD": {
+        "n": 200,
+        "health": {
+          "accuracy": 1.0,
+          "balanced_accuracy": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auroc": 1.0,
+          "average_precision": 0.9999999999999999,
+          "brier": 4.0193207701652997e-07,
+          "ece": 7.81002432685452e-05,
+          "tn": 84,
+          "fp": 0,
+          "fn": 0,
+          "tp": 116,
+          "n": 200
+        },
+        "attributes": {
+          "black_gill": {
+            "precision": 0.6666666666666666,
+            "recall": 1.0,
+            "f1": 0.8,
+            "average_precision": 0.9583333333333333,
+            "auroc": 0.9973958333333333,
+            "support_pos": 8,
+            "support_supervised": 200,
+            "brier": 0.0116273988979761,
+            "ece": 0.03197515007020167
+          },
+          "wssv": {
+            "precision": 1.0,
+            "recall": 0.9897959183673469,
+            "f1": 0.9948717948717948,
+            "average_precision": 0.999896928468357,
+            "auroc": 0.9998999599839936,
+            "support_pos": 98,
+            "support_supervised": 200,
+            "brier": 0.00416694376342336,
+            "ece": 0.014248556275715267
+          },
+          "yellow_head": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "average_precision": 1.0,
+            "auroc": 1.0,
+            "support_pos": 10,
+            "support_supervised": 200,
+            "brier": 0.0022264931310666623,
+            "ece": 0.007165980553956892
+          },
+          "macro_f1": 0.9316239316239315,
+          "micro_f1": 0.9787234042553192,
+          "macro_map": 0.9860767539338967,
+          "hamming_loss": 0.008333333333333333,
+          "exact_match_ratio": 0.98,
+          "n_rows": 200,
+          "n_supervised": 600,
+          "n_rows_fully_supervised": 200
+        }
+      }
+    }
+  },
+  "thresholds": [
+    0.41000000000000003,
+    0.46,
+    0.6900000000000001
+  ]
+}

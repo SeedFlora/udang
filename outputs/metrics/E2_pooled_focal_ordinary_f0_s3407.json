@@ -1,0 +1,200 @@
+{
+  "run_name": "E2_pooled_focal_ordinary_f0_s3407",
+  "fold": 0,
+  "seed": 3407,
+  "experiment": "E2",
+  "config_name": "E2_pooled_focal_ordinary",
+  "disease": {
+    "health": {
+      "accuracy": 0.9350348027842227,
+      "balanced_accuracy": 0.9291657194817005,
+      "precision": 0.9405204460966543,
+      "recall": 0.9547169811320755,
+      "f1": 0.9475655430711611,
+      "auroc": 0.9811093430325073,
+      "average_precision": 0.9876087233644443,
+      "brier": 0.05257259212702154,
+      "ece": 0.038509387331119006,
+      "tn": 150,
+      "fp": 16,
+      "fn": 12,
+      "tp": 253,
+      "n": 431
+    },
+    "attributes": {
+      "black_gill": {
+        "precision": 0.532608695652174,
+        "recall": 0.5384615384615384,
+        "f1": 0.5355191256830601,
+        "average_precision": 0.6196891910597894,
+        "auroc": 0.868939883645766,
+        "support_pos": 91,
+        "support_supervised": 431,
+        "brier": 0.12142831611772971,
+        "ece": 0.06430616074239266
+      },
+      "wssv": {
+        "precision": 0.8855721393034826,
+        "recall": 0.8557692307692307,
+        "f1": 0.8704156479217604,
+        "average_precision": 0.9239565938115302,
+        "auroc": 0.9460158675405312,
+        "support_pos": 208,
+        "support_supervised": 431,
+        "brier": 0.12441263507336553,
+        "ece": 0.14806870945927572
+      },
+      "yellow_head": {
+        "precision": 0.8333333333333334,
+        "recall": 0.5,
+        "f1": 0.625,
+        "average_precision": 0.6209922311571486,
+        "auroc": 0.874869109947644,
+        "support_pos": 10,
+        "support_supervised": 201,
+        "brier": 0.04312934810588732,
+        "ece": 0.09000858135369522
+      },
+      "macro_f1": 0.6769782578682735,
+      "micro_f1": 0.7631578947368421,
+      "macro_map": 0.7215460053428228,
+      "hamming_loss": 0.1354656632173095,
+      "exact_match_ratio": 0.9253731343283582,
+      "n_rows": 431,
+      "n_supervised": 1063,
+      "n_rows_fully_supervised": 201
+    },
+    "n": 431,
+    "by_source": {
+      "ShrimpDiseaseImageBD": {
+        "n": 230,
+        "health": {
+          "accuracy": 0.8869565217391304,
+          "balanced_accuracy": 0.8676775209213687,
+          "precision": 0.896774193548387,
+          "recall": 0.9328859060402684,
+          "f1": 0.9144736842105262,
+          "auroc": 0.9422487364321817,
+          "average_precision": 0.9584864274255451,
+          "brier": 0.08977830529875938,
+          "ece": 0.06398010925806137,
+          "tn": 65,
+          "fp": 16,
+          "fn": 10,
+          "tp": 139,
+          "n": 230
+        },
+        "attributes": {
+          "black_gill": {
+            "precision": 0.532608695652174,
+            "recall": 0.5903614457831325,
+            "f1": 0.5599999999999999,
+            "average_precision": 0.6455895046423822,
+            "auroc": 0.7762478485370052,
+            "support_pos": 83,
+            "support_supervised": 230,
+            "brier": 0.19235254584286315,
+            "ece": 0.08774876678539642
+          },
+          "wssv": {
+            "precision": 0.8541666666666666,
+            "recall": 0.7454545454545455,
+            "f1": 0.7961165048543689,
+            "average_precision": 0.8616492012266757,
+            "auroc": 0.8949242424242425,
+            "support_pos": 110,
+            "support_supervised": 230,
+            "brier": 0.16434191178553065,
+            "ece": 0.15920480005038173
+          },
+          "yellow_head": {
+            "precision": NaN,
+            "recall": NaN,
+            "f1": NaN,
+            "average_precision": NaN,
+            "auroc": NaN,
+            "support_pos": 0,
+            "support_supervised": 0,
+            "brier": NaN,
+            "ece": NaN
+          },
+          "macro_f1": 0.6780582524271844,
+          "micro_f1": 0.6876640419947506,
+          "macro_map": 0.753619352934529,
+          "hamming_loss": 0.25869565217391305,
+          "exact_match_ratio": NaN,
+          "n_rows": 230,
+          "n_supervised": 460,
+          "n_rows_fully_supervised": 0
+        }
+      },
+      "TigerShrimpBD": {
+        "n": 201,
+        "health": {
+          "accuracy": 0.9900497512437811,
+          "balanced_accuracy": 0.9913793103448276,
+          "precision": 1.0,
+          "recall": 0.9827586206896551,
+          "f1": 0.9913043478260869,
+          "auroc": 1.0,
+          "average_precision": 0.9999999999999999,
+          "brier": 0.009998890487719507,
+          "ece": 0.010474643711271013,
+          "tn": 85,
+          "fp": 0,
+          "fn": 2,
+          "tp": 114,
+          "n": 201
+        },
+        "attributes": {
+          "black_gill": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "average_precision": 0.16381777114993729,
+            "auroc": 0.8497409326424871,
+            "support_pos": 8,
+            "support_supervised": 201,
+            "brier": 0.04027123732777596,
+            "ece": 0.04969630160224763
+          },
+          "wssv": {
+            "precision": 0.9142857142857143,
+            "recall": 0.9795918367346939,
+            "f1": 0.9458128078817734,
+            "average_precision": 0.9563995218888514,
+            "auroc": 0.979591836734694,
+            "support_pos": 98,
+            "support_supervised": 201,
+            "brier": 0.07872241794004223,
+            "ece": 0.14683772635209463
+          },
+          "yellow_head": {
+            "precision": 0.8333333333333334,
+            "recall": 0.5,
+            "f1": 0.625,
+            "average_precision": 0.6209922311571486,
+            "auroc": 0.874869109947644,
+            "support_pos": 10,
+            "support_supervised": 201,
+            "brier": 0.04312934810588732,
+            "ece": 0.09000858135369522
+          },
+          "macro_f1": 0.5236042692939245,
+          "micro_f1": 0.8898678414096917,
+          "macro_map": 0.5804031747319791,
+          "hamming_loss": 0.04145936981757877,
+          "exact_match_ratio": 0.9253731343283582,
+          "n_rows": 201,
+          "n_supervised": 603,
+          "n_rows_fully_supervised": 201
+        }
+      }
+    }
+  },
+  "thresholds": [
+    0.39,
+    0.48000000000000004,
+    0.29000000000000004
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "run_name": "E1_disease_single_tiger_f0_s3407",
+  "fold": 0,
+  "seed": 3407,
+  "experiment": "E1",
+  "config_name": "E1_disease_single_tiger",
+  "disease": {
+    "health": {
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "auroc": 1.0,
+      "average_precision": 1.0,
+      "brier": 1.3923876608086618e-05,
+      "ece": 0.00038726684697394377,
+      "tn": 85,
+      "fp": 0,
+      "fn": 0,
+      "tp": 115,
+      "n": 200
+    },
+    "attributes": {
+      "black_gill": {
+        "precision": 0.8333333333333334,
+        "recall": 0.625,
+        "f1": 0.7142857142857143,
+        "average_precision": 0.7599715099715099,
+        "auroc": 0.9563802083333334,
+        "support_pos": 8,
+        "support_supervised": 200,
+        "brier": 0.01606375139812478,
+        "ece": 0.02183099178411794
+      },
+      "wssv": {
+        "precision": 0.9693877551020408,
+        "recall": 0.979381443298969,
+        "f1": 0.9743589743589743,
+        "average_precision": 0.9922349159379462,
+        "auroc": 0.9938945050545491,
+        "support_pos": 97,
+        "support_supervised": 200,
+        "brier": 0.01629763131373695,
+        "ece": 0.015803844650690735
+      },
+      "yellow_head": {
+        "precision": 0.75,
+        "recall": 0.9,
+        "f1": 0.8181818181818182,
+        "average_precision": 0.9488235294117647,
+        "auroc": 0.9957894736842106,
+        "support_pos": 10,
+        "support_supervised": 200,
+        "brier": 0.009096537665350683,
+        "ece": 0.01336821987410076
+      },
+      "macro_f1": 0.8356088356088356,
+      "micro_f1": 0.9437229437229439,
+      "macro_map": 0.9003433184404069,
+      "hamming_loss": 0.021666666666666667,
+      "exact_match_ratio": 0.955,
+      "n_rows": 200,
+      "n_supervised": 600,
+      "n_rows_fully_supervised": 200
+    },
+    "n": 200,
+    "by_source": {
+      "TigerShrimpBD": {
+        "n": 200,
+        "health": {
+          "accuracy": 1.0,
+          "balanced_accuracy": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auroc": 1.0,
+          "average_precision": 1.0,
+          "brier": 1.3923876608086618e-05,
+          "ece": 0.00038726684697394377,
+          "tn": 85,
+          "fp": 0,
+          "fn": 0,
+          "tp": 115,
+          "n": 200
+        },
+        "attributes": {
+          "black_gill": {
+            "precision": 0.8333333333333334,
+            "recall": 0.625,
+            "f1": 0.7142857142857143,
+            "average_precision": 0.7599715099715099,
+            "auroc": 0.9563802083333334,
+            "support_pos": 8,
+            "support_supervised": 200,
+            "brier": 0.01606375139812478,
+            "ece": 0.02183099178411794
+          },
+          "wssv": {
+            "precision": 0.9693877551020408,
+            "recall": 0.979381443298969,
+            "f1": 0.9743589743589743,
+            "average_precision": 0.9922349159379462,
+            "auroc": 0.9938945050545491,
+            "support_pos": 97,
+            "support_supervised": 200,
+            "brier": 0.01629763131373695,
+            "ece": 0.015803844650690735
+          },
+          "yellow_head": {
+            "precision": 0.75,
+            "recall": 0.9,
+            "f1": 0.8181818181818182,
+            "average_precision": 0.9488235294117647,
+            "auroc": 0.9957894736842106,
+            "support_pos": 10,
+            "support_supervised": 200,
+            "brier": 0.009096537665350683,
+            "ece": 0.01336821987410076
+          },
+          "macro_f1": 0.8356088356088356,
+          "micro_f1": 0.9437229437229439,
+          "macro_map": 0.9003433184404069,
+          "hamming_loss": 0.021666666666666667,
+          "exact_match_ratio": 0.955,
+          "n_rows": 200,
+          "n_supervised": 600,
+          "n_rows_fully_supervised": 200
+        }
+      }
+    }
+  },
+  "thresholds": [
+    0.37,
+    0.68,
+    0.12
+  ]
+}
