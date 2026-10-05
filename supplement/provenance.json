@@ -1,0 +1,70 @@
+{
+  "title": "ShrimpVision-MTL numerical supplement",
+  "repository": "https://github.com/SeedFlora/udang",
+  "source_commit": "b12bacda98dab5ba8e1d47b86698262f153accfe",
+  "prediction_seeds": [
+    42,
+    2026,
+    3407
+  ],
+  "bootstrap_and_forest_seed": 42,
+  "bootstrap_replicates": 2000,
+  "copied_without_numeric_changes": true,
+  "json_missing_value_representation": "null; source nonfinite values normalized without changing finite values",
+  "artifacts": [
+    {
+      "file": "t_biomass_protocols.csv",
+      "source_file": "outputs/reviewer/t_biomass_protocols.csv",
+      "source_sha256": "44838a12102c6c0f8ea35d7b3a8b642678eef43de094f30ab8cdef71748c2773",
+      "sha256": "44838a12102c6c0f8ea35d7b3a8b642678eef43de094f30ab8cdef71748c2773",
+      "normalized_missing_values": 0,
+      "rows": 13,
+      "columns": 32
+    },
+    {
+      "file": "t_biomass_protocols.json",
+      "source_file": "outputs/reviewer/t_biomass_protocols.json",
+      "source_sha256": "c880b79f3eb4e9ef788bce84f10bef570887a6c20eb1417e1f911bfa54c19a06",
+      "sha256": "ce2fb8dec18310a7ea507fc12b9cea0a0a712cfab3c1d415076a102df6191829",
+      "normalized_missing_values": 24,
+      "rows": 13,
+      "columns": 32
+    },
+    {
+      "file": "t_tabular_tier.csv",
+      "source_file": "outputs/reviewer/t_tabular_tier.csv",
+      "source_sha256": "7c78f9f03566729357bd67e7449c4ffd4fc1fe83d9a0a8d6f4ae51fbbbec55bc",
+      "sha256": "7c78f9f03566729357bd67e7449c4ffd4fc1fe83d9a0a8d6f4ae51fbbbec55bc",
+      "normalized_missing_values": 0,
+      "rows": 5,
+      "columns": 8
+    },
+    {
+      "file": "t_tabular_tier.json",
+      "source_file": "outputs/reviewer/t_tabular_tier.json",
+      "source_sha256": "c93c6ae1d7fd8b3d02db60e0ac7cb13a6132506d517a34ac9da1db8141361318",
+      "sha256": "c93c6ae1d7fd8b3d02db60e0ac7cb13a6132506d517a34ac9da1db8141361318",
+      "normalized_missing_values": 0,
+      "rows": 5,
+      "columns": 8
+    },
+    {
+      "file": "t_ablation_stats.csv",
+      "source_file": "outputs/reviewer/t_ablation_stats.csv",
+      "source_sha256": "036a3b4a6f25473f5080d9d38bd15948f5e52ca366b4b27fd4b5b07726cf2558",
+      "sha256": "036a3b4a6f25473f5080d9d38bd15948f5e52ca366b4b27fd4b5b07726cf2558",
+      "normalized_missing_values": 0,
+      "rows": 18,
+      "columns": 41
+    },
+    {
+      "file": "t_ablation_stats.json",
+      "source_file": "outputs/reviewer/t_ablation_stats.json",
+      "source_sha256": "969ed48005357b09b4d6cb71fac0e545cb82a6eaf9d77033e6c1213958b6ec1a",
+      "sha256": "969ed48005357b09b4d6cb71fac0e545cb82a6eaf9d77033e6c1213958b6ec1a",
+      "normalized_missing_values": 0,
+      "rows": 18,
+      "columns": 41
+    }
+  ]
+}

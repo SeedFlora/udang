@@ -68,6 +68,11 @@ These commands generate `t_biomass_protocols`, `t_tabular_tier`, and
 `t_ablation_stats` as CSV and JSON tables. The JSON records aggregation rules,
 bootstrap parameters, per-seed results, and source artifact paths.
 
+The published copies of these three tables are collected in
+[`supplement/`](supplement/) together with their definitions, provenance, and
+checksums. CSV files match `outputs/reviewer/` byte for byte; supplement JSON
+preserves finite values and represents unavailable values as `null`.
+
 ## Reproduce training
 
 Download and verify the public datasets before running image-based stages:

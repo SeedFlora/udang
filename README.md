@@ -5,6 +5,9 @@ Reviewer package for code and numerical reproduction. Start with
 current E10-E13 experiment route. The commands below also document the original
 E0-E9 pipeline.
 
+The numerical supplement is available in [`supplement/`](supplement/), with
+three result tables in CSV and JSON, provenance, and SHA-256 checksums.
+
 Cross-dataset multi-task learning for shrimp disease recognition and non-invasive
 biomass estimation.
 
